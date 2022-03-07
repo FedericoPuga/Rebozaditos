@@ -1,0 +1,72 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "header header"
+    "main main"
+    "footer footer";
+    width: 100%;
+    height: 100%;
+  }
+  .contenedor_productos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "header header"
+    "main main"
+    "footer footer";
+    width: 100%;
+    height: 100%;
+  }
+  .contenedor_coccion{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "header header"
+    "main main"
+    "footer footer";
+    width: 100%;
+    height: 100%;
+  }
+  .contenedor_comprar{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "header header"
+    "main main"
+    "footer footer";
+    width: 100%;
+    height: 100%;
+  }
+  .contenedor_nosotros{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "header header"
+    "main main"
+    "footer footer";
+    width: 100%;
+    height: 100%;
+  }
+  .contenedor_contacto{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "header header"
+    "main main"
+    "footer footer";
+    width: 100%;
+    height: 100%;
+  }
