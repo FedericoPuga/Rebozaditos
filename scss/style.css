@@ -1439,6 +1439,9 @@ main .info-main .pago .jumbotron p {
   .pasos_freir p {
     font-size: 1.4rem !important;
   }
+  .pasos_freir p .main .globo_texto input {
+    margin-left: 3px;
+  }
 }
 
 @media only screen and (max-width: 480px) {
