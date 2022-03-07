@@ -853,14 +853,49 @@ main .info-main .pago .jumbotron p {
   height: 1100px;
 }
 
+.main .fondo_comprar .boton-contacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main .fondo_comprar .boton-contacto a {
+  color: black;
+  background-color: #ffbf49;
+  padding: 5px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1.3rem;
+  font-style: italic;
+  cursor: pointer;
+  border: 1px solid black;
+  text-decoration: none;
+}
+
+.main .fondo_comprar .boton-contacto a:hover {
+  background-color: white;
+  border: #ffbf49 2px solid;
+}
+
 .main .fondo_comprar .pasos_comprar {
   padding: 100px 300px 100px 300px;
 }
 
 .main .fondo_comprar .pasos_comprar .comprar_1 {
   background-color: black;
+  -webkit-box-shadow: 1px 4px 6px 7px #969696;
+          box-shadow: 1px 4px 6px 7px #969696;
+  border-radius: 10px;
   margin-bottom: 100px;
   padding: 20px;
+}
+
+.main .fondo_comprar .pasos_comprar .comprar_1:hover {
+  -webkit-transform: scale(1.01, 1.01);
+          transform: scale(1.01, 1.01);
 }
 
 .main .fondo_comprar .pasos_comprar .comprar_1 h2 {
@@ -892,8 +927,16 @@ main .info-main .pago .jumbotron p {
 
 .main .fondo_comprar .pasos_comprar .comprar_2 {
   background-color: black;
+  -webkit-box-shadow: 1px 4px 6px 7px #969696;
+          box-shadow: 1px 4px 6px 7px #969696;
+  border-radius: 10px;
   margin-bottom: 100px;
   padding: 20px;
+}
+
+.main .fondo_comprar .pasos_comprar .comprar_2:hover {
+  -webkit-transform: scale(1.01, 1.01);
+          transform: scale(1.01, 1.01);
 }
 
 .main .fondo_comprar .pasos_comprar .comprar_2 h2 {
@@ -925,8 +968,16 @@ main .info-main .pago .jumbotron p {
 
 .main .fondo_comprar .pasos_comprar .comprar_3 {
   background-color: black;
-  margin-bottom: 100px;
+  -webkit-box-shadow: 1px 4px 6px 7px #969696;
+          box-shadow: 1px 4px 6px 7px #969696;
+  /*  margin-bottom: 100px; */
+  border-radius: 10px;
   padding: 20px;
+}
+
+.main .fondo_comprar .pasos_comprar .comprar_3:hover {
+  -webkit-transform: scale(1.01, 1.01);
+          transform: scale(1.01, 1.01);
 }
 
 .main .fondo_comprar .pasos_comprar .comprar_3 h2 {
@@ -1095,26 +1146,31 @@ main .info-main .pago .jumbotron p {
   font-style: italic;
 }
 
-.main .nombre_apellido {
+.main .globo_texto {
+  /* padding-top: 30px;
+        padding-left: 25px; */
+}
+
+.main .globo_texto .nombre_apellido {
   background-color: black;
   padding: 30px 0px 30px 60px;
 }
 
-.main .nombre_apellido h2 {
+.main .globo_texto .nombre_apellido h2 {
   color: #ffbf49;
   font-weight: 900;
   font-size: 2rem;
   font-style: italic;
 }
 
-.main .nombre_apellido input {
+.main .globo_texto .nombre_apellido input {
   border: 0px;
   border-radius: 15px;
   padding: 30px 200px 30px 30px;
   margin: 20px 20px 20px 0px;
 }
 
-.main .nombre_apellido .nombresexo {
+.main .globo_texto .nombre_apellido .nombresexo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1124,24 +1180,30 @@ main .info-main .pago .jumbotron p {
           flex-direction: row;
 }
 
-.main .nombre_apellido .sexo {
-  background-color: white;
-  width: 160px;
-  border-radius: 20px;
-  padding: 30px;
-  margin-left: 10px;
-  margin-right: 100px;
+.main .globo_texto .mail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+  margin-left: 70px !important;
 }
 
-.main .globo_texto {
-  padding-top: 30px;
-  padding-left: 60px;
+.main .globo_texto h4 {
+  font-weight: bold;
+  font-style: italic;
+  margin-left: 70px !important;
 }
 
 .main .globo_texto h2 {
   font-style: italic;
   font-weight: 900;
   padding-bottom: 10px;
+  margin-left: 70px !important;
+  margin-top: 20px;
 }
 
 .main .globo_texto textarea {
@@ -1149,6 +1211,7 @@ main .info-main .pago .jumbotron p {
   border: 0px 1px;
   border-radius: 20px;
   padding: 10px;
+  margin-left: 70px !important;
 }
 
 .main .globo_texto input {
@@ -1157,16 +1220,11 @@ main .info-main .pago .jumbotron p {
   border: 0.5px solid black;
   border-radius: 10px;
   padding: 10px;
-}
-
-.main .mail_wp {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  margin-left: 70px !important;
 }
 
 .main .mail_wp h2 {
-  padding: 30px 60px 30px 60px;
+  padding: 30px 60px 30px 30px;
 }
 
 .main .mail_wp span {
@@ -1561,33 +1619,19 @@ main .info-main .pago .jumbotron p {
 }
 
 /* contacto */
-@media only screen and (max-width: 933px) {
-  .mail_wp {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
+.main .globo_texto .globo2 {
+  margin-left: 0px !important;
 }
 
 @media only screen and (max-width: 600px) {
   .mail_wp h2 {
-    font-size: 1.6rem !important;
+    font-size: 2rem !important;
   }
 }
 
 @media only screen and (max-width: 500px) {
   .mail_wp h2 {
-    font-size: 1rem !important;
-  }
-}
-
-@media only screen and (max-width: 604px) {
-  .contactate h2 {
-    font-size: 3rem !important;
+    font-size: 1.6rem !important;
   }
 }
 
@@ -1597,19 +1641,40 @@ main .info-main .pago .jumbotron p {
   }
 }
 
-@media only screen and (max-width: 700px) {
-  .nombresexo {
-    -webkit-box-orient: vertical !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: column !important;
-            flex-direction: column !important;
+@media only screen and (max-width: 604px) {
+  .main .contactate h2 {
+    font-size: 2rem !important;
   }
 }
 
-@media only screen and (max-width: 520px) {
+@media only screen and (max-width: 375px) {
+  .main .globo_texto .nombre_apellido h2 {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .globo_texto .labeltexto {
+    padding-left: 0px !important;
+  }
+  .main .globo_texto .nombre_apellido {
+    padding: 10px 0px 30px 0px !important;
+  }
+  .main .globo_texto .nombre_apellido h2 {
+    margin-left: 20px !important;
+  }
+  .main .globo_texto h2 {
+    margin-left: 20px !important;
+  }
+  .main .globo_texto label {
+    margin-left: -50px !important;
+  }
   .nombre_apellido input {
-    padding: 30px 50px 30px 30px !important;
-    margin: 20px 20px 20px 0px;
+    padding: 20px 30px 20px 20px !important;
+    margin: 0px !important;
+  }
+  .main .globo_texto {
+    margin-left: 0px !important;
   }
 }
 

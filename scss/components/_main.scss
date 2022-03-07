@@ -531,12 +531,37 @@ main{
         margin: 0px !important;
         background-image: url(../image/ladrillos.jpg);
         height: 1100px;
+        .boton-contacto{
+            display: flex;
+            justify-content: center;
+            a{
+                color: rgb(0, 0, 0);
+                background-color: $color1;
+                padding: 5px;
+                border-radius: 10px;
+                font-weight: bold;
+                font-size: 1.3rem;
+                font-style: italic;
+                cursor: pointer;
+                border: 1px solid black;
+                text-decoration: none;
+                &:hover{
+                    background-color: white;
+                    border: $color1 2px solid;
+                }
+            }
+        }
         .pasos_comprar{
             padding: 100px 300px 100px 300px;
             .comprar_1{
-                background-color: black;
+                background-color: rgb(0, 0, 0);
+                box-shadow: 1px 4px 6px 7px rgb(150, 150, 150);
+                border-radius: 10px;
                 margin-bottom: 100px;
                 padding: 20px;
+                &:hover{
+                    transform: scale(1.01,1.01);
+                }
                 h2{
                     font-weight: 900;
                     color:$color1;
@@ -557,8 +582,13 @@ main{
             }
             .comprar_2{
                 background-color: black;
+                box-shadow: 1px 4px 6px 7px rgb(150, 150, 150);
+                border-radius: 10px;
                 margin-bottom: 100px;
                 padding: 20px;
+                &:hover{
+                    transform: scale(1.01,1.01);
+                }
                 h2{
                     font-weight: 900;
                     color:$color1;
@@ -579,8 +609,13 @@ main{
             }
             .comprar_3{
                 background-color: black;
-                margin-bottom: 100px;
+                box-shadow: 1px 4px 6px 7px rgb(150, 150, 150);
+               /*  margin-bottom: 100px; */
+                border-radius: 10px;
                 padding: 20px;
+                &:hover{
+                    transform: scale(1.01,1.01);
+                }
                 h2{
                     font-weight: 900;
                     color:$color1;
@@ -713,47 +748,55 @@ main{
         font-weight: 900;
         font-style: italic;
     }
-    .nombre_apellido{
-        background-color: black;
-        padding:  30px 0px 30px 60px;
-        h2{
-            color: $color1;
-            font-weight: 900;
-            font-size: 2rem;
-            font-style: italic;
-        }
-        input{
-            border: 0px;
-            border-radius: 15px;
-            padding: 30px 200px 30px 30px;
-            margin: 20px 20px 20px 0px;
-        }
-        .nombresexo{
-            display: flex;
-            flex-direction: row;
-        }
-        .sexo{
-            background-color: white;
-            width: 160px;
-            border-radius: 20px;
-            padding: 30px;
-            margin-left: 10px;
-            margin-right: 100px;
-        }
-    }
+    
     .globo_texto{
-        padding-top: 30px;
-        padding-left: 60px;
+        /* padding-top: 30px;
+        padding-left: 25px; */
+        .nombre_apellido{
+            background-color: black;
+            padding:  30px 0px 30px 60px;
+            h2{
+                color: $color1;
+                font-weight: 900;
+                font-size: 2rem;
+                font-style: italic;
+            }
+            input{
+                border: 0px;
+                border-radius: 15px;
+                padding: 30px 200px 30px 30px;
+                margin: 20px 20px 20px 0px;
+            }
+            .nombresexo{
+                display: flex;
+                flex-direction: row;
+            }
+    
+        }
+        .mail{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+            margin-left: 70px !important;
+        }
+        h4{
+            font-weight: bold;
+            font-style: italic;
+            margin-left: 70px !important;
+        }
         h2{
             font-style: italic;
             font-weight: 900;
             padding-bottom: 10px;
+            margin-left: 70px !important;
+            margin-top: 20px;
         }
         textarea{
             font-size: 1rem;
             border: 0px 1px;
             border-radius: 20px;
             padding: 10px;
+            margin-left: 70px !important;
         }
         input{
             background-color: $color1;
@@ -761,12 +804,12 @@ main{
             border: 0.5px solid black;
             border-radius: 10px;
             padding: 10px;
+            margin-left: 70px !important;
         }
     }
     .mail_wp{
-        display: flex;
         h2{
-            padding: 30px 60px 30px 60px;
+            padding: 30px 60px 30px 30px;
         }
         span{
             color: $color1;
@@ -1104,25 +1147,23 @@ main{
     }
 }
 /* contacto */
-@media only screen and (max-width: 933px){
-    .mail_wp{
-        display: flex;
-        flex-direction: column;
-    }
+.main .globo_texto .globo2 {
+    margin-left: 0px!important;
 }
+
+
+
+
+
+
 @media only screen and (max-width: 600px){
     .mail_wp h2{
-        font-size: 1.6rem !important;
+        font-size: 2rem !important;
     }
 }
 @media only screen and (max-width: 500px){
     .mail_wp h2{
-        font-size: 1rem !important;
-    }
-}
-@media only screen and (max-width: 604px){
-    .contactate h2{
-        font-size: 3rem !important;
+        font-size: 1.6rem !important;
     }
 }
 @media only screen and (max-width: 610px){
@@ -1131,15 +1172,39 @@ main{
     }
 
 }
-@media only screen and (max-width: 700px){
-    .nombresexo{
-        flex-direction: column !important;
+@media only screen and (max-width: 604px){
+    .main .contactate h2{
+        font-size: 2rem !important;
     }
 }
-@media only screen and (max-width: 520px){
+ @media only screen and (max-width: 375px){
+    .main .globo_texto .nombre_apellido h2{
+        font-size: 2rem;
+    }
+    
+} 
+@media only screen and (max-width: 650px){
+    .globo_texto .labeltexto{
+        padding-left: 0px !important;
+    }
+    .main .globo_texto .nombre_apellido{
+        padding: 10px 0px 30px 0px !important;
+    }
+    .main .globo_texto .nombre_apellido h2{
+        margin-left: 20px!important;
+    }
+    .main .globo_texto h2{
+        margin-left: 20px!important;
+    }
+    .main .globo_texto label{
+        margin-left: -50px!important;
+    }
     .nombre_apellido input{
-        padding: 30px 50px 30px 30px !important;
-        margin: 20px 20px 20px 0px;
+        padding: 20px 30px 20px 20px !important;
+        margin: 0px !important;
+    }
+    .main .globo_texto{
+        margin-left: 0px !important;
     }
 }
 /* footer */
