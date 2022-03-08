@@ -1,11 +1,21 @@
 .header{
     grid-area: header;
-    .navbar{
+    width: 100%;
+
+    nav{
         background-color: $color1 !important;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        .navbar-collapse{
+            justify-content: flex-end;
+        }
         .logo{
             padding-left: 20px;
             margin-right: 20px;
             transition: all 0.3s;
+            display: flex;
+            justify-content: space-around;
             &:hover{
                 transform: scale(1.1,1.1);
             }

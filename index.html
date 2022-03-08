@@ -1,24 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
+<!-- head -->
 
 <head>
+    <!-- meta -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sitio oficial de Rebozaditos. Ingresá para conocer nuestros productos a base de mozzarella, cheddar y más!">
+    <meta name="description"
+        content="Sitio oficial de Rebozaditos. Ingresá para conocer nuestros productos a base de mozzarella, cheddar y más!">
     <meta name="keywords" content="rebozados, minorista, mayorista, comida, envios, formas de pago">
+    <!-- font awesome -->
     <script src="https://kit.fontawesome.com/88027d82b5.js" crossorigin="anonymous"></script>
+    <!-- bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!-- favicon -->
     <link rel="shortcut icon" href="/image/logorebomini.png">
+    <!-- css -->
     <link rel="stylesheet" href="./scss/style.css">
-    <title>Home</title>
+    <!-- titulo -->
+    <title>Rebozaditos - Home</title>
 </head>
+<!-- body -->
 
 <body class="contenedor">
     <header class="header">
 
-        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark" id="nav">
             <!-- Brand -->
             <a href="index.html"><img src="./image/logorebo.png" width="120" class="logo" alt="logo rebozaditos"></a>
 
@@ -30,7 +39,6 @@
             <!-- Navbar links -->
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav">
-                    <li><a href="index.html">Home</a></li>
                     <li><a href="pages/productos.html">Productos</a></li>
                     <li><a href="pages/coccion.html">Cocción</a></li>
                     <li><a href="pages/comprar.html">Comprar</a></li>
@@ -40,7 +48,7 @@
             </div>
         </nav>
     </header>
-
+    <!-- main -->
     <main class="main">
         <section class="hero">
             <div class="foto">
@@ -51,11 +59,11 @@
                 </div>
             </div>
         </section>
-        <div class="productos_home">
+        <section class="productos_home">
             <h2>PRODUCTOS</h2>
             <button class="boton"><a href="/pages/productos.html">VER MÁS</a></button>
-        </div>
-        <div class="carrusel_home">
+        </section>
+        <section class="carrusel_home">
             <div id="demo" class="carousel slide" data-ride="carousel">
 
                 <!-- Indicators -->
@@ -68,21 +76,21 @@
                 <!-- The slideshow -->
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="./image/foto33.jpg" alt="Los Angeles">
+                        <img src="./image/foto33.jpg" alt="Baston de mozzarella" height="300">
                         <div class="carousel-caption">
                             <h3>REBOZADITOS MAYORISTA</h3>
                             <p>¡Ventas mayoristas y minoristas!</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="./image/foto22.jpg" alt="Chicago">
+                        <img src="./image/foto22.jpg" alt="Productos" height="300">
                         <div class="carousel-caption">
                             <h3>¡REALIZAMOS ENVIOS!</h3>
                             <p>Para mas información comunicarse por WhatsApp</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="./image/foto11.jpg" alt="New York">
+                        <img src="./image/foto11.jpg" alt="Baston de mozzarella" height="300">
                         <div class="carousel-caption">
                             <h3>¡PRODUCTOS REBOZADOS Y CONGELADOS!</h3>
                             <p>Pedinos la lista de precios por WhatsApp</p>
@@ -99,28 +107,32 @@
                 </a>
 
             </div>
-        </div>
+        </section>
 
         <section class="info-main">
 
-            <div class="envio">
+            <div class="envio-pago">
                 <div class="jumbotron">
-                    <i class="fa-solid fa-truck"></i>
-                    <h2>ENVIOS</h2>
-                    <p>CONSULTAR CONDICIONES DE ENVIO <br>(11-5347-2817)</p>
+                    <div class="foto-envio">
+                        <i class="fa-solid fa-truck"></i>
+                        <h2>ENVIOS</h2>
+                        <p>CONSULTAR CONDICIONES DE ENVIO <br>(11-5347-2817)</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="pago">
+            <div class="envio-pago">
                 <div class="jumbotron">
-                    <i class="fa-solid fa-money-bill-1"></i>
-                    <h2>FORMA DE PAGO</h2>
-                    <p>EFECTIVO - MERCADO PAGO - TRANSFERENCIA</p>
+                    <div class="foto-pago">
+                        <i class="fa-solid fa-money-bill-1"></i>
+                        <h2>FORMA DE PAGO</h2>
+                        <p>EFECTIVO - MERCADO PAGO - TRANSFERENCIA</p>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
-
+    <!-- footer -->
     <footer class="footer">
         <div class="redes">
             <p>SEGUINOS</p>
@@ -140,10 +152,12 @@
     </footer>
     <script src="/scripts.js"></script>
 </body>
+<!-- bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
     crossorigin="anonymous"></script>
+
 </html>

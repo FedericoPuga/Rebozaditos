@@ -6,13 +6,13 @@ main{
             background-image: url(../image/chedars.jpg);
             background-size: cover;
             background-position: center;
-            height: 220vh;
+            height: 100vh;
         }
         .texto_hero{
             padding: 40px;
             h1{
                 color:rgb(255, 255, 255);
-                font-size: 7rem !important ;
+                font-size: 7rem;
                 font-weight: 900;
                 font-style: italic;
                 text-shadow:1px 1px 2px rgb(94, 94, 94) ;
@@ -66,20 +66,21 @@ main{
             background-color: rgb(0, 0, 0);
             border: 0px ;
             margin-left: 10px;
-        }
-        a{
-            padding: 8px;
-            color: $color1;
-            margin: 0px;
-            text-decoration: none;
-            border: 1px solid rgb(255, 191, 73);
-            border-radius: 15px;
-            &:hover{
-                font-weight: bold;
-                background-color: white;
+            a{
+                padding: 8px;
+                color: $color1;
+                margin: 0px;
+                text-decoration: none;
+                border: 1px solid rgb(255, 191, 73);
                 border-radius: 15px;
+                &:hover{
+                    font-weight: bold;
+                    background-color: white;
+                    border-radius: 15px;
+                }
             }
         }
+        
     }
     .carrusel_home{
         display: flex;
@@ -89,24 +90,47 @@ main{
         padding-bottom: 70px;
         .slide{
             width: 80%;
-        }
-        .slide img{
-            width: 100%;
+            img{
+                background-size: cover;
+                width: 100%;
+                height: 800px;
+            }
         }
     }
     /* jumbotrons home */
     .info-main{
         padding: 30px;
         background-color: black;
-        .envio .jumbotron{
-            background-image: linear-gradient(rgba(16, 16, 16, .3), rgba(16, 16, 16, .8)) ,url(../image/foto-envio.jpg);
-            background-size: cover;
-            background-position: center;
+        .envio-pago .jumbotron{
+            margin: 30px 0px 30px 0px;
+            padding: 0px;
             text-align: center;
             border-radius: 0px;
             transition: all 0.3s;
             &:hover{
                 transform: scale(1.01,1.01);
+            }
+            .foto-envio{
+            background-image: linear-gradient(rgba(16, 16, 16, .3), rgba(16, 16, 16, .8)) ,url(../image/foto-envio.jpg);
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            }
+            .foto-pago{
+            background-image:linear-gradient(rgba(16, 16, 16, .3), rgba(16, 16, 16, .8)) ,url(https://img.freepik.com/foto-gratis/liquidacion-tarjeta-credito-pos-lugar-compras-efectivo_1359-1162.jpg?w=1380);
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
             }
             i{
                 font-size: 100px;
@@ -122,38 +146,11 @@ main{
                 font-weight: bold;
                 font-size: 20px;
                 color: white;
-            }
-        }
-        .pago .jumbotron{
-            margin: 0px;
-            background-image:linear-gradient(rgba(16, 16, 16, .3), rgba(16, 16, 16, .8)) ,url(https://img.freepik.com/foto-gratis/liquidacion-tarjeta-credito-pos-lugar-compras-efectivo_1359-1162.jpg?w=1380);
-            background-size: cover;
-            background-position: center;
-            text-align: center;
-            border-radius: 0px;
-            transition: all 0.3s;
-            &:hover{
-                transform: scale(1.01,1.01);
-            }
-            i{
-                font-size: 100px;
-            }
-            h2{
-                font-weight: 900;
-                font-style: italic;
-                color: $color1;
-                font-size: 4rem;
-                text-shadow: 1px 1px 2px black;
-            }
-            p{
-                font-weight: bold;
-                font-size: 20px;
-                color: white;
+                margin: 0px;
             }
         }
     }
 }
-
 /* main productos */
 .main{
     grid-area: main;
@@ -164,161 +161,86 @@ main{
         padding: 30px;
         .slide{
             width: 80%;
-        }
-        .slide img{
-            width: 100%;
-        }
-        .slide h3{
-            font-weight: 900;
-            font-size: 4rem;
-            font-style: italic;
-            color: $color1;
+            img{
+                width: 100%;
+                height: 710px;
+            }
+            h3{
+                font-weight: 900;
+                font-size: 4rem;
+                font-style: italic;
+                color: $color1;
+            }
         }
     }
     .hero{
         .foto_productos{
-            background-image: url(../image/bast2.jpg);
+            background-image: url(../image/bast223.jpg);
             background-size: cover;
             background-position: center;
             height: 100vh;
         }
-        .texto_hero{
-            padding: 40px;
-            h1{
-                color:rgb(255, 255, 255);
-                font-size: 5rem;
-                font-weight: 900;
-                font-style: italic;
-                text-shadow:1px 1px 2px rgb(94, 94, 94) ;
-            }
-            h2{
-                flex-wrap: wrap;
-                font-weight:300;
-                font-size: 1.5em;
-                padding-right: 20px;
-                color: $color1;
-                text-decoration: none;
-                text-shadow:1px 1px 2px rgb(94, 94, 94) ;
-            }
-            button{
-                font-size: 1em;
-                background: none;
-                padding: 10px;
-                border: solid $color1 1px;
-                margin-top: 20px;
-                border-radius: 15px;
-                color: white;
-                text-decoration: none;
-                cursor: pointer;
-                a{
-                color: white;
-                text-decoration: none;
-                text-shadow:1px 1px 2px rgb(94, 94, 94) ;
-                &:hover{
-                    font-weight: bold;
-                }
-                }
-            } 
-        } 
     } 
-    .productos1{
+    .productos{
         background-color: black;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        align-items: center;
         width: 100%;
-        .cheddar{
-            width: 50%;
+        .producto{
+            width: 70%;
             padding: 20px 10px 20px 20px;
-            .jumbotron{
-                height: 400px;
+            .jumbotron1{
+                height: 600px;
                 background-image: url(../image/cheddar.jpg);
                 background-size: cover;
                 background-position: center;
             }
-        }
-        .texto{
-            h2{
-                color: $color1;
-                font-weight: 900;
-                display: flex;
-                justify-content: center;
-                text-align: center;
-            }
-            h3{
-                color: rgb(255, 255, 255);
-                font-weight: 900;
-                font-size: 20px;
-                display: flex;
-                justify-content: center;
-                text-align: center;
-            }
-            p{
-                color: white;
-                display: flex;
-                justify-content: center;
-                text-align: center;
-            }
-        }
-        
-        .baston{
-            width: 50%;
-            padding: 20px 20px 20px 10px;
-            .jumbotron{
-                height: 400px;
+            .jumbotron2{
+                height: 600px;
                 background-image: url(../image/baston-prod.jpg);
                 background-size: cover;
                 background-position: center;
             }
-        }
-    }
-    .productos2{
-        background-color: black;
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        .bolitas{
-            width: 50%;
-            padding: 20px 10px 20px 20px;
-            .jumbotron{
-                height: 400px;
+            .jumbotron3{
+                height: 600px;
                 background-image: url(../image/bolitas-prod.jpg);
                 background-size: cover;
                 background-position: center;
             }
-        }
-        .texto{
-            h2{
-                color: $color1;
-                font-weight: 900;
-                display: flex;
-                justify-content: center;
-                text-align: center;
-            }
-            h3{
-                color: rgb(255, 255, 255);
-                font-weight: 900;
-                font-size: 20px;
-                display: flex;
-                justify-content: center;
-                text-align: center;
-            }
-            p{
-                color: white;
-                display: flex;
-                justify-content: center;
-                text-align: center;
-            }
-        }
-        .bastoncitos{
-            width: 50%;
-            padding: 20px 20px 20px 10px;
-            .jumbotron{
-                height: 400px;
+            .jumbotron4{
+                height: 600px;
                 background-image: url(../image/bastoncito-prod.jpg);
                 background-size: cover;
                 background-position: center;
             }
+            .texto{
+                h2{
+                    color: $color1;
+                    font-weight: 900;
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+                    padding-top: 30px;
+                    font-style: italic;
+                }
+                h3{
+                    color: rgb(255, 255, 255);
+                    font-weight: 900;
+                    font-size: 20px;
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+                }
+                p{
+                    color: white;
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+                }
+            }
         }
+        
     }
 }
 /* main coccion */
@@ -355,147 +277,43 @@ main{
             text-transform: uppercase; 
         }
     }
-    .fondo_freir{
-        .fondo_freir2{
-            background-color: black;
-                width: 100%;
-                background-size: cover;
-                background-position: center;
-                .freir_1{
-                    width:100%;
-                    padding: 20px;
-                    display: flex;
-                    justify-content: center;
-                    .jumbotron{
-                    height: 300px;
-                    background-image: url(../image/ladrillos.jpg);
-                    background-size: cover;
-                    background-position: center;
-                    width: 70%;    
-                    margin: 0px !important;
-                    h2{
-                        color: $color1 ;
-                        display: flex;
-                        justify-content: center;
-                        font-weight: 900;
-                        font-style: italic;
-                        font-size: 4rem;
-                        text-shadow: 1px 1px 2px rgb(122, 122, 122);
-                    }
-                    p{
-                        font-size: 1.5rem;
-                        display: flex;
-                        justify-content: center;
-                        text-align: center;
-                        font-weight: bold;
-                    }
-                    }
+    .coccion{
+        background-image: url(../image/ladrillos.jpg);
+        width: 100%;
+        .coccion-container{
+            width:100%;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+                .jumbotron{
+                height: 300px;
+                background-color: black;
+                width: 70%;    
+                margin: 0px ;
+                box-shadow: 1px 4px 6px 7px rgb(150, 150, 150);
+                &:hover{
+                    transform: scale(1.01,1.01);
                 }
-                .freir_2{
-                    width:100%;
-                    padding: 20px;
-                    display: flex;
-                    justify-content: center;
-                    .jumbotron{
-                    height: 300px;
-                    background-image: url(../image/ladrillos.jpg);
-                    background-size: cover;
-                    background-position: center;
-                    width: 70%;  
-                    margin: 0px !important;
-                    h2{
-                        color: $color1 ;
-                        display: flex;
-                        justify-content: center;
-                        font-weight: 900;
-                        font-style: italic;
-                        font-size: 4rem;
-                        text-shadow: 1px 1px 2px rgb(122, 122, 122);
-                    }
-                    p{
-                        font-size: 1.5rem;
-                        display: flex;
-                        justify-content: center;
-                        text-align: center;
-                        font-weight: bold;
-                        }
-                    }
+                h2{
+                color: $color1 ;
+                display: flex;
+                justify-content: center;
+                font-weight: 900;
+                font-style: italic;
+                font-size: 4rem;
+                text-shadow: 1px 1px 2px rgb(122, 122, 122);
                 }
-                .freir_3{
-                    width:100%;
-                    padding: 20px;
-                    display: flex;
-                    justify-content: center;
-                    .jumbotron{
-                    width: 70%;
-                    height: 300px;
-                    background-image: url(../image/ladrillos.jpg);
-                    background-size: cover;
-                    background-position: center;  
-                    margin: 0px !important;
-                    h2{
-                        text-shadow: 1px 1px 2px rgb(122, 122, 122);
-                        color: $color1 ;
-                        display: flex;
-                        justify-content: center;
-                        font-weight: 900;
-                        font-style: italic;
-                        font-size: 4rem;
-                    }
-                    p{
-                        font-size: 1.5rem;
-                        display: flex;
-                        justify-content: center;
-                        text-align: center;
-                        font-weight: bold;
-                    }
-                    }
-                }
-                .freir_4{
-                    width:100%;
-                    padding: 20px;
-                    display: flex;
-                    justify-content: center;
-                    .jumbotron{
-                    height: 300px;
-                    background-image: url(../image/ladrillos.jpg);
-                    background-size: cover;
-                    background-position: center;
-                    width: 70%;      
-                    h2{
-                        text-shadow: 1px 1px 2px rgb(122, 122, 122);
-                        color: $color1 ;
-                        display: flex;
-                        justify-content: center;
-                        font-weight: 900;
-                        font-style: italic;
-                        font-size: 4rem;
-                    }  
-                    p{
-                        font-size: 1.5rem;
-                        display: flex;
-                        justify-content: center;
-                        text-align: center;
-                        font-weight: bold;
-                    }
-                    }
-                }
-                .freir_5{
-                    width:100%;
-                    padding: 20px;
-                    display: flex;
-                    justify-content: center;
-                    .jumbotron{
-                    height: 800px;
-                    background-image: url(../image/baston-coccion.jpg);
-                    background-size: cover;
-                    background-position: center;
-                    width: 80%;      
+                p{
+                color: white;
+                font-size: 1.5rem;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                font-weight: bold;
                 }
             }
-                
-        }
-    }    
+        }   
+    }       
 }
 /* main comprar */
 .main{
@@ -505,12 +323,7 @@ main{
             background-image: url(../image/baston-comprar.jpg);
             background-size: cover;
             background-position: center;
-            height: 130vh;
-            .texto_hero{
-                h1{
-                 color: black;
-                }
-            }
+            height: 100vh;
         }
     }
     .como_comprar{
@@ -524,11 +337,11 @@ main{
             text-align: center;
             color: white;
             padding: 30px;
-            margin: 0px !important;
+            margin: 0px;
         }
     }
     .fondo_comprar{
-        margin: 0px !important;
+        margin: 0px;
         background-image: url(../image/ladrillos.jpg);
         height: 1100px;
         .boton-contacto{
@@ -553,65 +366,11 @@ main{
         }
         .pasos_comprar{
             padding: 100px 300px 100px 300px;
-            .comprar_1{
+            .pasos{
                 background-color: rgb(0, 0, 0);
                 box-shadow: 1px 4px 6px 7px rgb(150, 150, 150);
                 border-radius: 10px;
                 margin-bottom: 100px;
-                padding: 20px;
-                &:hover{
-                    transform: scale(1.01,1.01);
-                }
-                h2{
-                    font-weight: 900;
-                    color:$color1;
-                    font-size: 5rem;
-                    font-style: italic;
-                    display: flex;
-                    justify-content: center;
-                }
-                p{
-                    font-weight: bold;
-                    font-size: 2rem;
-                    font-style: italic;
-                    display: flex;
-                    justify-content: center;
-                    color: white;
-                    text-align: center;
-                }
-            }
-            .comprar_2{
-                background-color: black;
-                box-shadow: 1px 4px 6px 7px rgb(150, 150, 150);
-                border-radius: 10px;
-                margin-bottom: 100px;
-                padding: 20px;
-                &:hover{
-                    transform: scale(1.01,1.01);
-                }
-                h2{
-                    font-weight: 900;
-                    color:$color1;
-                    font-size: 5rem;
-                    font-style: italic;
-                    display: flex;
-                    justify-content: center;
-                }
-                p{
-                    font-weight: bold;
-                    font-size: 2rem;
-                    font-style: italic;
-                    display: flex;
-                    justify-content: center;
-                    color: white;
-                    text-align: center;
-                }
-            }
-            .comprar_3{
-                background-color: black;
-                box-shadow: 1px 4px 6px 7px rgb(150, 150, 150);
-               /*  margin-bottom: 100px; */
-                border-radius: 10px;
                 padding: 20px;
                 &:hover{
                     transform: scale(1.01,1.01);
@@ -646,9 +405,6 @@ main{
             background-size: cover;
             background-position: center;
             height: 100vh;
-            h1{
-            color:$color1;
-            }
         }
     }
     .quienes_somos{
@@ -669,14 +425,14 @@ main{
         text-align: center;
         color:black;
         font-weight: 900;
-        margin: 0px !important;
+        margin: 0px;
         }
         span{
             font-weight: 900;
             color:rgb(255, 255, 255) ;
         }
     }
-    .proposito{
+    .nosotros{
         background-color: black;
         padding: 30px;
         h2{
@@ -691,36 +447,7 @@ main{
             width: 70%;
         }
     }
-    .mision{
-        background-color: black;
-        padding: 30px;
-        h2{
-            font-size: 5rem;
-            font-weight: 900;
-            font-style: italic;
-            color: white;
-        }
-        p{
-            font-size: 2rem;
-            color: white;
-            width: 70%;
-        }
-    }
-    .vision{
-        background-color: black;
-        padding: 30px;
-        h2{
-            font-size: 5rem;
-            font-weight: 900;
-            font-style: italic;
-            color: white;
-        }
-        p{
-            font-size: 2rem;
-            color: white;
-            width: 70%;
-        }
-    }
+    
 }
 /* main contacto */
 .main{
@@ -730,14 +457,7 @@ main{
             background-image: url(../image/fondo-contacto.jpg);
             background-size: cover;
             background-position: center;
-            height: 150vh;
-        }
-        h1{
-            color:rgb(255, 255, 255);
-            font-size: 7rem !important ;
-            font-weight: 900;
-            font-style: italic;
-            text-shadow:1px 3px 4px rgb(83, 83, 83) ;
+            height: 100vh;
         }
     }
     .contactate h2{
@@ -748,18 +468,16 @@ main{
         font-weight: 900;
         font-style: italic;
     }
-    
     .globo_texto{
-        /* padding-top: 30px;
-        padding-left: 25px; */
         .nombre_apellido{
             background-color: black;
             padding:  30px 0px 30px 60px;
             h2{
                 color: $color1;
                 font-weight: 900;
-                font-size: 2rem;
+                font-size: 4rem;
                 font-style: italic;
+                margin-left: 10px;
             }
             input{
                 border: 0px;
@@ -777,18 +495,18 @@ main{
             display: flex;
             flex-direction: column;
             margin-bottom: 20px;
-            margin-left: 70px !important;
+            margin-left: 70px;
         }
         h4{
             font-weight: bold;
             font-style: italic;
-            margin-left: 70px !important;
+            margin-left: 70px ;
         }
         h2{
             font-style: italic;
             font-weight: 900;
             padding-bottom: 10px;
-            margin-left: 70px !important;
+            margin-left: 70px ;
             margin-top: 20px;
         }
         textarea{
@@ -796,7 +514,7 @@ main{
             border: 0px 1px;
             border-radius: 20px;
             padding: 10px;
-            margin-left: 70px !important;
+            margin-left: 70px ;
         }
         input{
             background-color: $color1;
@@ -804,424 +522,284 @@ main{
             border: 0.5px solid black;
             border-radius: 10px;
             padding: 10px;
-            margin-left: 70px !important;
+            margin-left: 70px ;
         }
     }
     .mail_wp{
+        margin-left: 40px ;
         h2{
             padding: 30px 60px 30px 30px;
+            font-weight: 900;
+            font-style: italic;
         }
         span{
             color: $color1;
+            font-weight: bold;
         }
     }
 }
 
-
-
-/* media queries index */
+/* media queries */
 /* header */
-@media only screen and (max-width: 850px){
-    .header .navbar ul li a{
-        font-size: 17px !important;
+@media only screen and (max-width: 768px){
+    .header nav{
+        justify-content: space-between;
     }
-}
-@media only screen and (max-width: 765px){
-    .header .navbar ul li a{
-        font-size: 30px !important;
+    .header nav ul li a{
+        font-size: 2.2rem;
     }
-}
-
-/* hero */
-@media only screen and (max-width: 900px){
-    main .hero .texto_hero h1{
-        font-size: 4.5rem !important;
+    .main .pasos_freir h2{
+        font-size: 3rem;
     }
-}
-@media only screen and (max-width: 600px){
-    main .hero .texto_hero h1{
-        font-size: 3rem !important;
-    }
-    main .hero .texto_hero h2{
-        font-size: 1rem !important;
-    }
-    main .hero{
-        height: 80vh !important;
-    }
-}
-@media only screen and (max-width: 430px){
-    main .hero .texto_hero h1{
-        font-size: 2rem !important;
-    }
-    main .hero .texto_hero h2{
-        font-size: 20px !important;
-    }
-}
-/* fin hero */
-@media only screen and (max-width: 505px){
-    main .productos_home{
-        display: flex;
-        justify-content: space-around;
-    }
-    main .productos_home h2{
-        font-size: 40px;
-        margin: 0px;
-    }
-}
-@media only screen and (max-width: 415px){
-    main .productos_home{
-        height: 120px;
-    }
-    main .productos_home {
-        flex-direction: column;
-    }
-    main .productos_home h2 {
-        margin: 0px;
-        padding: 5px;
-        display: flex;
-        justify-content: center;
-    }
-    main .productos_home button {
-        margin: 0px;
-        display: flex;
-        justify-content: center;
-    }
-    main .productos_home a{
-        padding: 4px;
-        font-size: 15px;
-    }
-}
-/* row */
-@media only screen and (max-width: 600px){
-   main .roww{
-        flex-direction: column;
-    }
-    main .roww .section_dos{
-        width: 100%;
-    }
-    main .roww .section_tres{
-        width: 100%; 
-    }
-}
-/* carrousel */
-@media only screen and (max-width: 700px){
-    main .carrusel_home .slide{
-        width: 100%;
-        border: 0px;
-    }
-}
-@media only screen and (max-width: 700px){
-    main .carrusel_home .slide{
-        width: 100%;
-        border: 0px;
-    }
-}
-@media only screen and (max-width: 550px){
-    main .carrusel_home h3{
-        font-size: 15px;
-    }
-    main .carrusel_home p{
-        font-size: 10px;
-    }
-}
-/* productos */
-@media only screen and (max-width: 1300px){
-    .slide h3{
-        font-weight: bold !important;
-        font-size: 2.5rem !important;
-        
-    }
-}
-@media only screen and (max-width: 800px){
-    .slide h3{
-        font-weight: bold !important;
-        font-size: 1.5rem !important;
-        
-    }
-}
-@media only screen and (max-width: 500px){
-    .slide h3{
-        font-weight: bold !important;
-        font-size: 1rem !important;
-        
-    }
-}
-@media only screen and (max-width: 1000px){
-    .productos1{
-        flex-direction: column !important;
-        
-    }
-    .productos2{
-        flex-direction: column !important;
-
-    }
-    .productos1 .cheddar{
-        width: 100% !important;
-        padding: 10px !important;
-    }
-    .productos1 .baston{
-        width: 100% !important;
-        padding: 10px !important;
-    }
-    .productos2 .bolitas{
-        width: 100% !important;
-        padding: 10px !important;
-    }
-    .productos2 .bastoncitos{
-        width: 100% !important;
-        padding: 10px !important;
-    }
-}
-/* coccion */
-@media only screen and (max-width: 875px){
-    .pasos_freir h2{
-        font-size: 3rem !important;
-    }
-}
-@media only screen and (max-width: 480px){
-    .pasos_freir h2{
-        font-size: 2rem !important;
-    }
-}
-@media only screen and (max-width: 730px){
-    .pasos_freir p{
-        font-size: 2rem !important;
-    }
-}
-@media only screen and (max-width: 480px){
-    .pasos_freir p{
-        font-size: 1.4rem !important ;
-    .main .globo_texto input{
-    margin-left: 3px;
-    }
-    } 
-
-}
-@media only screen and (max-width: 480px){
-    .freir_1 h2{
-        font-size: 3rem !important ;
-    }
-    .freir_1 p{
-        font-size: 1.2rem !important;
-    }
-    .freir_2 h2{
-        font-size: 3rem !important ;
-    }
-    .freir_2 p{
-        font-size: 1.2rem !important;
-    }
-    .freir_2 .jumbotron{
-        height: 400px !important;
-    }
-    .freir_3 h2{
-        font-size: 3rem !important ;
-    }
-    .freir_3 p{
-        font-size: 1.2rem !important;
-    }
-    .freir_4 h2{
-        font-size: 3rem !important ;
-    }
-    .freir_4 p{
-        font-size: 1.2rem !important;
-    }
-    
-}
-
-/* comprar */
-@media only screen and (max-width: 1340px){
-    .como_comprar h2{
-        font-size: 3rem !important;
-    }
-}
-@media only screen and (max-width: 675px){
-    .como_comprar h2{
-        font-size: 2rem !important;
-    }
-}
-@media only screen and (max-width: 400px){
-    .como_comprar h2{
-        font-size: 1.5rem !important;
-    }
-}
-@media only screen and (max-width: 1400px){
-    .fondo_comprar{
-        height: 1100px !important;
-    }
-}
-@media only screen and (max-width: 1100px){
-    .pasos_comprar{
-        padding: 100px 100px 100px 100px !important;
-    }
-}
-@media only screen and (max-width: 665px){
-    .fondo_comprar{
-        height: 1300px !important;
-    }
-}
-@media only screen and (max-width: 700px){
-    .pasos_comprar h2{
-        font-size: 3rem !important;
-    }
-    .pasos_comprar{
-        padding: 100px 50px 100px 50px !important;
-    }
-}
-@media only screen and (max-width: 320px){
-    .fondo_comprar{
-        height: 1500px !important;
-    }
-}
-/* nosotros */
-@media only screen and (max-width: 1000px){
-    .quienes_somos h3{
-        font-size: 2rem !important;
-    }
-}
-@media only screen and (max-width: 500px){
-    .quienes_somos h3{
-        font-size: 1.5rem !important;
-    }
-}
-@media only screen and (max-width: 650px){
-    .quienes_somos h2{
-        font-size: 4rem !important;
-    }
-}
-@media only screen and (max-width: 500px){
-    .quienes_somos h2{
-        font-size: 2.5rem !important;
-    }
-}
-@media only screen and (max-width: 650px){
-    .proposito{
-        text-align: center;
-        padding: 10px;
-    }
-    .proposito p{
-        display: flex;
-        justify-content: center;
-        padding: 0px !important;
-        margin: 0px!important;
-        width: 100% !important;
-    }
-    .vision{
-        text-align: center;
-    }
-    .vision p{
-        display: flex;
-        justify-content: center;
-        padding: 0px !important;
-        margin: 0px!important;
-        width: 100% !important;
-    }
-    .mision{
-        text-align: center;
-    }
-    .mision p{
-        display: flex;
-        justify-content: center;
-        padding: 0px !important;
-        margin: 0px!important;
-        width: 100% !important;
-    }
-}
-@media only screen and (max-width: 530px){
-    .main .hero .foto_nosotros .texto_hero h1{
-        font-size: 4rem !important;
-    }
-    .proposito h2{
-        font-size: 3rem !important;
-    }
-    .vision h2{
-        font-size: 3rem !important;
-    }
-    .mision h2{
-        font-size: 3rem !important;
-    }
-    .proposito p{
-        font-size: 1.3rem !important;
-    }
-    .vision p{
-        font-size: 1.3rem !important;
-    }
-    .mision p{
-        font-size: 1.3rem !important;
-    }
-}
-/* contacto */
-.main .globo_texto .globo2 {
-    margin-left: 0px!important;
-}
-
-
-
-
-
-
-@media only screen and (max-width: 600px){
-    .mail_wp h2{
-        font-size: 2rem !important;
-    }
-}
-@media only screen and (max-width: 500px){
-    .mail_wp h2{
-        font-size: 1.6rem !important;
-    }
-}
-@media only screen and (max-width: 610px){
-    .main .hero .foto_contacto{
-        height: 80vh !important;
-    }
-
-}
-@media only screen and (max-width: 604px){
-    .main .contactate h2{
-        font-size: 2rem !important;
-    }
-}
- @media only screen and (max-width: 375px){
-    .main .globo_texto .nombre_apellido h2{
+    .main .pasos_freir p{
         font-size: 2rem;
     }
-    
-} 
-@media only screen and (max-width: 650px){
-    .globo_texto .labeltexto{
-        padding-left: 0px !important;
+}
+/* carrusel home */
+@media only screen and (max-width: 1600px){
+    main .carrusel_home .slide img{
+        height: 600px;
     }
-    .main .globo_texto .nombre_apellido{
-        padding: 10px 0px 30px 0px !important;
+    .main .carrusel_productos .slide img{
+        height: 600px;
     }
-    .main .globo_texto .nombre_apellido h2{
-        margin-left: 20px!important;
+    .main .nosotros{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
     }
-    .main .globo_texto h2{
-        margin-left: 20px!important;
-    }
-    .main .globo_texto label{
-        margin-left: -50px!important;
-    }
-    .nombre_apellido input{
-        padding: 20px 30px 20px 20px !important;
-        margin: 0px !important;
-    }
-    .main .globo_texto{
-        margin-left: 0px !important;
+    .main .nosotros p{
+        width: 90%;
     }
 }
-/* footer */
+@media only screen and (max-width: 1340px){
+    main .carrusel_home .slide img{
+        height: 500px;
+    }
+    .main .carrusel_productos .slide img{
+        height: 440px;
+    }
+}
+
 @media only screen and (max-width: 1150px){
+    main .carrusel_home .slide img{
+        height: 400px;
+    }
+    .main .fondo_comprar .pasos_comprar .pasos h2{
+        font-size: 3rem;
+    }
+    .main .fondo_comprar .pasos_comprar{
+        padding: 100px 200px 100px 200px;
+    }
+}
+@media only screen and (max-width: 900px){
+    main .carrusel_home .slide img{
+        height: 300px;
+    }
     footer{
         flex-direction: column;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
     footer .secciones_footer ul{
         justify-content: center;
     }
-    footer .secciones_footer{
-        justify-content: center;
+    .main .carrusel_productos .slide img{
+        height: 340px;
+    }
+    .main .carrusel_productos .slide h3{
+        font-size: 2rem;
+    }
+    main .hero .texto_hero h1 {
+        font-size: 5rem;
+    }
+    .main .productos .producto .jumbotron1{
+        height: 400px;
+    }
+    .main .productos .producto .jumbotron2{
+        height: 400px;
+    }
+    .main .productos .producto .jumbotron3{
+        height: 400px;
+    }
+    .main .productos .producto .jumbotron4{
+        height: 400px;
+    }
+    .main .coccion .coccion-container .jumbotron{
+        width: 100%;
+    }
+    .main .fondo_comprar .pasos_comprar{
+        padding: 50px 100px 50px 100px;
     }
 }
+@media only screen and (max-width: 630px){
+    main .carrusel_home .slide img{
+        height: 200px;
+    }
+    main .carrusel_home .slide h3{
+        font-size: 1rem;
+    }
+    main .carrusel_home .slide p{
+        font-size: 1rem;
+    }
+    main .carrusel_home .slide{
+        width: 100%;
+    }
+    main .hero .texto_hero h1 {
+        font-size: 4rem;
+    }
+    .main .carrusel_productos .slide img{
+        height: 280px;
+    }
+    .main .carrusel_productos .slide{
+        width: 100%;
+    }
+    .main .carrusel_productos{
+        padding: 20px 0px 20px 0px;
+    }
+    .main .coccion .coccion-container .jumbotron h2{
+        font-size: 3rem;
+    }
+    .main .coccion .coccion-container .jumbotron p{
+        font-size: 1.4rem;
+    }
+    .main .como_comprar h2{
+        font-size: 3rem;
+    }
+    .main .quienes_somos h3{
+        font-size: 2rem;
+    }
+    .mail_wp h2{
+        font-size: 2rem ;
+    }
+    .main .hero .foto_contacto{
+        height: 80vh ;
+    }
+    .main .contactate h2{
+        font-size: 2rem;
+    }
+    
+    @media only screen and (max-width: 650px){
+        .globo_texto .labeltexto{
+            padding-left: 0px ;
+        }
+        .main .globo_texto .nombre_apellido{
+            padding: 10px 0px 30px 0px ;
+        }
+        .main .globo_texto .nombre_apellido h2{
+            margin-left: 20px;
+            font-size: 2rem;
+        }
+        .main .globo_texto h2{
+            margin-left: 20px;
+        }
+         .main .globo_texto label{
+            margin-left: 50px;
+        } 
+        .nombre_apellido input{
+            padding: 20px 30px 20px 20px !important;
+            margin: 0px ;
+        }
+        .main .globo_texto{
+            margin-left: 0px ;
+        }
+        .main .globo_texto h4{
+            margin-left: -20px;
+        }
+        .main .globo_texto .mail{
+            margin-left: -20px;
+        }
+        .main .globo_texto textarea{
+            margin-left: -20px;
+        }
+        .main .globo_texto input{
+            margin-left: 30px;
+        }
+    }
+}
+@media only screen and (max-width: 530px){
+    main .hero .texto_hero h1 {
+        font-size: 3rem;
+    }
+    main .productos_home{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    main .productos_home h2{
+        margin-left: 0px;
+    }
+    main .info-main .envio-pago .jumbotron .foto-pago{
+        height: 400px;
+    }
+    .main .carrusel_productos .slide img{
+        height: 180px;
+    }
+    .main .carrusel_productos .slide h3{
+        font-size: 1rem;
+    }
+    .main .pasos_freir h2{
+        font-size: 2rem;
+    }
+    .main .pasos_freir p{
+        font-size: 1rem;
+    }
+    .main .fondo_comprar .pasos_comprar .pasos p{
+        font-size: 1.5rem;
+    }
+    .main .fondo_comprar .pasos_comprar{
+        padding: 50px 50px 50px 50px;
+    }
+    .main .nosotros h2{
+        font-size: 3rem;
+    }
+    .main .nosotros p{
+        font-size: 1rem;
+    }
+    .mail_wp h2{
+        font-size: 1.6rem ;
+    }
+}
+@media only screen and (max-width: 420px){
+    main .hero .texto_hero h1 {
+        font-size: 2rem;
+    }
+    main .productos_home h2{
+        font-size: 2.5rem;
+    }
+    main .info-main .envio-pago .jumbotron h2{
+        font-size: 2.5rem;
+    }
+    .main .productos .producto .jumbotron1{
+        height: 200px;
+    }
+    .main .productos .producto .jumbotron2{
+        height: 200px;
+    }
+    .main .productos .producto .jumbotron3{
+        height: 200px;
+    }
+    .main .productos .producto .jumbotron4{
+        height: 200px;
+    }
+    .main .productos .producto .texto h2{
+        font-size: 1.5rem;
+    }
+    .main .pasos_freir h2{
+        font-size: 1.3rem;
+    }
+    .main .coccion .coccion-container .jumbotron {
+        height: 410px;
+    }
+    .main .como_comprar h2{
+        font-size: 2rem;
+    }
+    .main .quienes_somos h3{
+        font-size: 1.5rem;
+    }
+    .main .globo_texto .nombre_apellido h2{
+        font-size: 2rem;
+    }
+}
+
+
+
