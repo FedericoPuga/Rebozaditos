@@ -7,14 +7,15 @@ footer{
     padding: 30px;
     ul li a{
         text-decoration: none !important;
-        color:rgb(255, 255, 255) !important;
+        color:rgb(255, 255, 255);
         padding: 10px; 
         transition: all 0.3s;
         font-size: 1.3rem;
         font-weight: 200;
         font-style: italic;
         &:hover{
-            color: rgb(0, 0, 0) !important;
+            color: rgb(0, 0, 0);
+            font-size: 1.4rem;
         }        
     }
     .secciones_footer{
@@ -45,11 +46,11 @@ footer{
         }
         .fa-brands{
             color:rgb(0, 0, 0);
-        }
-        .fa-brands:hover{
-            color:  rgb(255, 255, 255);
-            transform: rotate(360deg);
-            transition: 2s;
+            &:hover{
+                color:  rgb(255, 255, 255);
+                transform: rotate(360deg);
+                transition: 2s;
+            }
         }
     }
 }

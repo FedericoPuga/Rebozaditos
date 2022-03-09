@@ -16,61 +16,6 @@
   height: 100%;
 }
 
-.contenedor_productos {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  grid-auto-flow: row;
-      grid-template-areas: "header header" "main main" "footer footer";
-  width: 100%;
-  height: 100%;
-}
-
-.contenedor_coccion {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  grid-auto-flow: row;
-      grid-template-areas: "header header" "main main" "footer footer";
-  width: 100%;
-  height: 100%;
-}
-
-.contenedor_comprar {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  grid-auto-flow: row;
-      grid-template-areas: "header header" "main main" "footer footer";
-  width: 100%;
-  height: 100%;
-}
-
-.contenedor_nosotros {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  grid-auto-flow: row;
-      grid-template-areas: "header header" "main main" "footer footer";
-  width: 100%;
-  height: 100%;
-}
-
-.contenedor_contacto {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  grid-auto-flow: row;
-      grid-template-areas: "header header" "main main" "footer footer";
-  width: 100%;
-  height: 100%;
-}
-
 .header {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -113,7 +58,7 @@
 }
 
 .header nav ul li a {
-  text-decoration: none !important;
+  text-decoration: none;
   color: white;
   margin: 10px;
   padding: 2px 10px 2px 10px;
@@ -126,9 +71,6 @@
 
 .header nav ul li a:hover {
   color: black;
-}
-
-.header nav ul li a:hover {
   background-color: white;
   border-radius: 15px;
 }
@@ -169,29 +111,44 @@ main .hero .texto_hero h2 {
   padding-right: 20px;
   color: #ffbf49;
   text-decoration: none;
-  text-shadow: 1px 1px 2px #5e5e5e;
+  text-shadow: 1px 3px 4px #303030;
 }
 
-main .hero .texto_hero button {
-  font-size: 1em;
-  background: none;
-  padding: 10px;
-  border: solid #ffbf49 1px;
-  margin-top: 20px;
-  border-radius: 15px;
+main .botones-fijos .wp_fijo a {
+  font-size: 2.5rem;
+  background-color: #0d941f;
+  padding: 0px 10px 2px 10px;
+  border: white solid 2px;
   color: white;
-  text-decoration: none;
+  border-radius: 50px;
+  bottom: 120px;
+  right: 20px;
+  display: inline-block;
   cursor: pointer;
+  position: fixed;
+  text-shadow: 2px 2px 2px #666666;
 }
 
-main .hero .texto_hero button a {
+main .botones-fijos .wp_fijo a i:hover {
   color: white;
-  text-decoration: none;
-  text-shadow: 1px 1px 2px #5e5e5e;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: 2s;
+  transition: 2s;
 }
 
-main .hero .texto_hero button a:hover {
-  font-weight: bold;
+main .botones-fijos .subir i {
+  font-size: 2.5rem;
+  padding: 8px 10px;
+  border: white solid 2px;
+  color: white;
+  border-radius: 40px;
+  bottom: 30px;
+  right: 20px;
+  display: inline-block;
+  cursor: pointer;
+  position: fixed;
+  text-shadow: 1px 2px 4px #5c5c5c;
 }
 
 main .productos_home {
@@ -248,8 +205,9 @@ main .carrusel_home {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url(../image/ladrillos.jpg);
-  padding-top: 70px;
+  /* background-image: url(../image/ladrillos.jpg); */
+  background-color: black;
+  /* padding-top: 70px; */
   padding-bottom: 70px;
 }
 
@@ -261,11 +219,13 @@ main .carrusel_home .slide img {
   background-size: cover;
   width: 100%;
   height: 800px;
+  border-radius: 30px;
 }
 
 main .info-main {
   padding: 30px;
-  background-color: black;
+  /* background-color: black; */
+  background-image: url(../image/ladrillos.jpg);
 }
 
 main .info-main .envio-pago .jumbotron {
@@ -275,6 +235,9 @@ main .info-main .envio-pago .jumbotron {
   border-radius: 0px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  -webkit-box-shadow: 3px 5px 10px black;
+          box-shadow: 3px 5px 10px black;
+  border-radius: 30px;
 }
 
 main .info-main .envio-pago .jumbotron:hover {
@@ -302,6 +265,7 @@ main .info-main .envio-pago .jumbotron .foto-envio {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  border-radius: 30px;
 }
 
 main .info-main .envio-pago .jumbotron .foto-pago {
@@ -324,6 +288,7 @@ main .info-main .envio-pago .jumbotron .foto-pago {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  border-radius: 30px;
 }
 
 main .info-main .envio-pago .jumbotron i {
@@ -371,13 +336,14 @@ main .info-main .envio-pago .jumbotron p {
 .main .carrusel_productos .slide img {
   width: 100%;
   height: 710px;
+  border-radius: 30px;
 }
 
 .main .carrusel_productos .slide h3 {
   font-weight: 900;
   font-size: 4rem;
   font-style: italic;
-  color: #ffbf49;
+  color: white;
 }
 
 .main .hero .foto_productos {
@@ -404,7 +370,7 @@ main .info-main .envio-pago .jumbotron p {
 
 .main .productos .producto {
   width: 70%;
-  padding: 20px 10px 20px 20px;
+  padding: 20px 10px 20px 10px;
 }
 
 .main .productos .producto .jumbotron1 {
@@ -412,6 +378,14 @@ main .info-main .envio-pago .jumbotron p {
   background-image: url(../image/cheddar.jpg);
   background-size: cover;
   background-position: center;
+  -webkit-transform: all 0.5s;
+          transform: all 0.5s;
+  border-radius: 30px;
+}
+
+.main .productos .producto .jumbotron1:hover {
+  -webkit-transform: scale(1.01, 1.01);
+          transform: scale(1.01, 1.01);
 }
 
 .main .productos .producto .jumbotron2 {
@@ -419,6 +393,14 @@ main .info-main .envio-pago .jumbotron p {
   background-image: url(../image/baston-prod.jpg);
   background-size: cover;
   background-position: center;
+  -webkit-transform: all 0.5s;
+          transform: all 0.5s;
+  border-radius: 30px;
+}
+
+.main .productos .producto .jumbotron2:hover {
+  -webkit-transform: scale(1.01, 1.01);
+          transform: scale(1.01, 1.01);
 }
 
 .main .productos .producto .jumbotron3 {
@@ -426,6 +408,14 @@ main .info-main .envio-pago .jumbotron p {
   background-image: url(../image/bolitas-prod.jpg);
   background-size: cover;
   background-position: center;
+  -webkit-transform: all 0.5s;
+          transform: all 0.5s;
+  border-radius: 30px;
+}
+
+.main .productos .producto .jumbotron3:hover {
+  -webkit-transform: scale(1.01, 1.01);
+          transform: scale(1.01, 1.01);
 }
 
 .main .productos .producto .jumbotron4 {
@@ -433,6 +423,14 @@ main .info-main .envio-pago .jumbotron p {
   background-image: url(../image/bastoncito-prod.jpg);
   background-size: cover;
   background-position: center;
+  border-radius: 30px;
+  -webkit-transform: all 0.5s;
+          transform: all 0.5s;
+}
+
+.main .productos .producto .jumbotron4:hover {
+  -webkit-transform: scale(1.01, 1.01);
+          transform: scale(1.01, 1.01);
 }
 
 .main .productos .producto .texto h2 {
@@ -546,6 +544,20 @@ main .info-main .envio-pago .jumbotron p {
   background-color: black;
   width: 70%;
   margin: 0px;
+  border-radius: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-shadow: 1px 4px 6px 7px #969696;
           box-shadow: 1px 4px 6px 7px #969696;
 }
@@ -658,7 +670,7 @@ main .info-main .envio-pago .jumbotron p {
   background-color: black;
   -webkit-box-shadow: 1px 4px 6px 7px #969696;
           box-shadow: 1px 4px 6px 7px #969696;
-  border-radius: 10px;
+  border-radius: 30px;
   margin-bottom: 100px;
   padding: 20px;
 }
@@ -788,7 +800,17 @@ main .info-main .envio-pago .jumbotron p {
 
 .main .globo_texto .nombre_apellido {
   background-color: black;
-  padding: 30px 0px 30px 60px;
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .main .globo_texto .nombre_apellido h2 {
@@ -816,7 +838,14 @@ main .info-main .envio-pago .jumbotron p {
           flex-direction: row;
 }
 
-.main .globo_texto .mail {
+.main .globo_texto .globo2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 40px;
+}
+
+.main .globo_texto .globo2 .mail {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -825,53 +854,66 @@ main .info-main .envio-pago .jumbotron p {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 20px;
-  margin-left: 70px;
 }
 
-.main .globo_texto h4 {
-  font-weight: bold;
-  font-style: italic;
-  margin-left: 70px;
-}
-
-.main .globo_texto h2 {
-  font-style: italic;
-  font-weight: 900;
-  padding-bottom: 10px;
-  margin-left: 70px;
-  margin-top: 20px;
-}
-
-.main .globo_texto textarea {
+.main .globo_texto .globo2 .areatexto {
+  width: 700px;
   font-size: 1rem;
   border: 0px 1px;
   border-radius: 20px;
   padding: 10px;
-  margin-left: 70px;
 }
 
-.main .globo_texto input {
-  background-color: #ffbf49;
-  cursor: pointer;
-  border: 0.5px solid black;
-  border-radius: 10px;
-  padding: 10px;
-  margin-left: 70px;
-}
-
-.main .mail_wp {
-  margin-left: 40px;
-}
-
-.main .mail_wp h2 {
-  padding: 30px 60px 30px 30px;
+.main .globo_texto .globo2 h2 {
+  font-size: 4rem;
   font-weight: 900;
   font-style: italic;
 }
 
-.main .mail_wp span {
-  color: #ffbf49;
+.main .globo_texto .globo2 h4 {
   font-weight: bold;
+  font-style: italic;
+}
+
+.main .globo_texto .globo2 input {
+  background-color: #ffbf49;
+  cursor: pointer;
+  border: 0px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  margin-right: 5px;
+}
+
+.main .globo_texto .globo2 input:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
+.main .globo_texto .globo2 .mail_wp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 120px;
+}
+
+.main .globo_texto .globo2 .mail_wp i {
+  font-weight: bold;
+  color: #ffbf49;
+  font-family: 'Monsterrat' sans-serif;
+}
+
+.main .globo_texto .globo2 .mail_wp h3 {
+  font-style: italic;
+  font-weight: bold;
+  padding-bottom: 10px;
+  margin-top: 20px;
 }
 
 /* media queries */
@@ -890,6 +932,12 @@ main .info-main .envio-pago .jumbotron p {
   }
   .main .pasos_freir p {
     font-size: 2rem;
+  }
+  .main .globo_texto .globo2 .areatexto {
+    width: 400px;
+  }
+  .main .globo_texto .globo2 .mail_wp h3 {
+    font-size: 1.2rem;
   }
 }
 
@@ -926,6 +974,15 @@ main .info-main .envio-pago .jumbotron p {
   .main .carrusel_productos .slide img {
     height: 440px;
   }
+  .main .globo_texto .globo2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .globo_texto .globo2 .mail_wp {
+    padding-top: 30px;
+  }
 }
 
 @media only screen and (max-width: 1150px) {
@@ -937,6 +994,12 @@ main .info-main .envio-pago .jumbotron p {
   }
   .main .fondo_comprar .pasos_comprar {
     padding: 100px 200px 100px 200px;
+  }
+  main .botones-fijos .wp_fijo a {
+    bottom: 220px;
+  }
+  main .botones-fijos .subir i {
+    bottom: 150px;
   }
 }
 
@@ -981,6 +1044,9 @@ main .info-main .envio-pago .jumbotron p {
   }
   .main .fondo_comprar .pasos_comprar {
     padding: 50px 100px 50px 100px;
+  }
+  .main .productos .producto {
+    width: 90%;
   }
 }
 
@@ -1045,6 +1111,7 @@ main .info-main .envio-pago .jumbotron p {
   }
   .main .globo_texto h2 {
     margin-left: 20px;
+    font-size: 1.6rem;
   }
   .main .globo_texto label {
     margin-left: 50px;
@@ -1055,18 +1122,6 @@ main .info-main .envio-pago .jumbotron p {
   }
   .main .globo_texto {
     margin-left: 0px;
-  }
-  .main .globo_texto h4 {
-    margin-left: -20px;
-  }
-  .main .globo_texto .mail {
-    margin-left: -20px;
-  }
-  .main .globo_texto textarea {
-    margin-left: -20px;
-  }
-  .main .globo_texto input {
-    margin-left: 30px;
   }
 }
 
@@ -1094,6 +1149,7 @@ main .info-main .envio-pago .jumbotron p {
   }
   .main .carrusel_productos .slide img {
     height: 180px;
+    padding: 10px;
   }
   .main .carrusel_productos .slide h3 {
     font-size: 1rem;
@@ -1116,8 +1172,12 @@ main .info-main .envio-pago .jumbotron p {
   .main .nosotros p {
     font-size: 1rem;
   }
-  .mail_wp h2 {
-    font-size: 1.6rem;
+  .main .globo_texto .globo2 h2 {
+    font-size: 2rem;
+    margin-left: 0px;
+  }
+  .main .globo_texto .globo2 .areatexto {
+    width: 250px;
   }
 }
 
@@ -1150,7 +1210,7 @@ main .info-main .envio-pago .jumbotron p {
     font-size: 1.3rem;
   }
   .main .coccion .coccion-container .jumbotron {
-    height: 410px;
+    height: 450px;
   }
   .main .como_comprar h2 {
     font-size: 2rem;
@@ -1160,6 +1220,9 @@ main .info-main .envio-pago .jumbotron p {
   }
   .main .globo_texto .nombre_apellido h2 {
     font-size: 2rem;
+  }
+  .main .globo_texto .globo2 .mail_wp h3 {
+    font-size: 1rem;
   }
 }
 
@@ -1182,7 +1245,7 @@ footer {
 
 footer ul li a {
   text-decoration: none !important;
-  color: white !important;
+  color: white;
   padding: 10px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -1192,7 +1255,8 @@ footer ul li a {
 }
 
 footer ul li a:hover {
-  color: black !important;
+  color: black;
+  font-size: 1.4rem;
 }
 
 footer .secciones_footer {
