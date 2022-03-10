@@ -318,6 +318,36 @@ main .info-main .envio-pago .jumbotron p {
   grid-area: main;
 }
 
+.main .hero .foto_productos {
+  background-image: url(../image/bast223.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.main .titulos-prod {
+  background-color: #ffbf49;
+}
+
+.main .titulos-prod h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 5rem;
+  font-weight: 900;
+  font-style: italic;
+  color: white;
+  padding: 20px;
+  margin: 0px;
+  text-align: center;
+}
+
 .main .carrusel_productos {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -331,6 +361,9 @@ main .info-main .envio-pago .jumbotron p {
 
 .main .carrusel_productos .slide {
   width: 80%;
+  -webkit-box-shadow: 1px 4px 6px 5px #b3b3b3;
+          box-shadow: 1px 4px 6px 5px #b3b3b3;
+  border-radius: 30px;
 }
 
 .main .carrusel_productos .slide img {
@@ -344,13 +377,6 @@ main .info-main .envio-pago .jumbotron p {
   font-size: 4rem;
   font-style: italic;
   color: white;
-}
-
-.main .hero .foto_productos {
-  background-image: url(../image/bast223.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
 }
 
 .main .productos {
@@ -378,14 +404,14 @@ main .info-main .envio-pago .jumbotron p {
   background-image: url(../image/cheddar.jpg);
   background-size: cover;
   background-position: center;
-  -webkit-transform: all 0.5s;
-          transform: all 0.5s;
   border-radius: 30px;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
 }
 
 .main .productos .producto .jumbotron1:hover {
-  -webkit-transform: scale(1.01, 1.01);
-          transform: scale(1.01, 1.01);
+  -webkit-transform: scale(1.05, 1.05);
+          transform: scale(1.05, 1.05);
 }
 
 .main .productos .producto .jumbotron2 {
@@ -393,14 +419,14 @@ main .info-main .envio-pago .jumbotron p {
   background-image: url(../image/baston-prod.jpg);
   background-size: cover;
   background-position: center;
-  -webkit-transform: all 0.5s;
-          transform: all 0.5s;
   border-radius: 30px;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
 }
 
 .main .productos .producto .jumbotron2:hover {
-  -webkit-transform: scale(1.01, 1.01);
-          transform: scale(1.01, 1.01);
+  -webkit-transform: scale(1.05, 1.05);
+          transform: scale(1.05, 1.05);
 }
 
 .main .productos .producto .jumbotron3 {
@@ -408,14 +434,14 @@ main .info-main .envio-pago .jumbotron p {
   background-image: url(../image/bolitas-prod.jpg);
   background-size: cover;
   background-position: center;
-  -webkit-transform: all 0.5s;
-          transform: all 0.5s;
   border-radius: 30px;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
 }
 
 .main .productos .producto .jumbotron3:hover {
-  -webkit-transform: scale(1.01, 1.01);
-          transform: scale(1.01, 1.01);
+  -webkit-transform: scale(1.05, 1.05);
+          transform: scale(1.05, 1.05);
 }
 
 .main .productos .producto .jumbotron4 {
@@ -424,13 +450,13 @@ main .info-main .envio-pago .jumbotron p {
   background-size: cover;
   background-position: center;
   border-radius: 30px;
-  -webkit-transform: all 0.5s;
-          transform: all 0.5s;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
 }
 
 .main .productos .producto .jumbotron4:hover {
-  -webkit-transform: scale(1.01, 1.01);
-          transform: scale(1.01, 1.01);
+  -webkit-transform: scale(1.05, 1.05);
+          transform: scale(1.05, 1.05);
 }
 
 .main .productos .producto .texto h2 {
@@ -526,9 +552,22 @@ main .info-main .envio-pago .jumbotron p {
 .main .coccion {
   background-image: url(../image/ladrillos.jpg);
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.main .coccion .coccion-container {
+.main .coccion .video {
+  background-image: url(/image/video.gif);
+  height: 500px;
+  background-repeat: no-repeat;
+}
+
+.main .coccion .cont-coccion .coccion-container {
   width: 100%;
   padding: 20px;
   display: -webkit-box;
@@ -539,7 +578,7 @@ main .info-main .envio-pago .jumbotron p {
           justify-content: center;
 }
 
-.main .coccion .coccion-container .jumbotron {
+.main .coccion .cont-coccion .coccion-container .jumbotron {
   height: 300px;
   background-color: black;
   width: 70%;
@@ -562,12 +601,12 @@ main .info-main .envio-pago .jumbotron p {
           box-shadow: 1px 4px 6px 7px #969696;
 }
 
-.main .coccion .coccion-container .jumbotron:hover {
+.main .coccion .cont-coccion .coccion-container .jumbotron:hover {
   -webkit-transform: scale(1.01, 1.01);
           transform: scale(1.01, 1.01);
 }
 
-.main .coccion .coccion-container .jumbotron h2 {
+.main .coccion .cont-coccion .coccion-container .jumbotron h2 {
   color: #ffbf49;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -581,7 +620,7 @@ main .info-main .envio-pago .jumbotron p {
   text-shadow: 1px 1px 2px #7a7a7a;
 }
 
-.main .coccion .coccion-container .jumbotron p {
+.main .coccion .cont-coccion .coccion-container .jumbotron p {
   color: white;
   font-size: 1.5rem;
   display: -webkit-box;
@@ -592,6 +631,97 @@ main .info-main .envio-pago .jumbotron p {
           justify-content: center;
   text-align: center;
   font-weight: bold;
+}
+
+.main .card-deck {
+  padding: 40px;
+  background-color: white;
+  width: 100%;
+  margin: 0px;
+}
+
+.main .card-deck .galeria1 {
+  border-radius: 20px;
+}
+
+.main .card-deck .galeria1 .card-body {
+  background-image: url(/image/galeria1.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  border-radius: 20px;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+  -webkit-box-shadow: 1px 4px 6px 5px #b3b3b3;
+          box-shadow: 1px 4px 6px 5px #b3b3b3;
+}
+
+.main .card-deck .galeria1 .card-body:hover {
+  -webkit-transform: scale(1.05, 1.05);
+          transform: scale(1.05, 1.05);
+}
+
+.main .card-deck .galeria2 {
+  border-radius: 20px;
+}
+
+.main .card-deck .galeria2 .card-body {
+  background-image: url(/image/galeria2.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  border-radius: 20px;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+  -webkit-box-shadow: 1px 4px 6px 5px #b3b3b3;
+          box-shadow: 1px 4px 6px 5px #b3b3b3;
+}
+
+.main .card-deck .galeria2 .card-body:hover {
+  -webkit-transform: scale(1.05, 1.05);
+          transform: scale(1.05, 1.05);
+}
+
+.main .card-deck .galeria3 {
+  border-radius: 20px;
+}
+
+.main .card-deck .galeria3 .card-body {
+  background-image: url(/image/galeria3.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  border-radius: 20px;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+  -webkit-box-shadow: 1px 4px 6px 5px #b3b3b3;
+          box-shadow: 1px 4px 6px 5px #b3b3b3;
+}
+
+.main .card-deck .galeria3 .card-body:hover {
+  -webkit-transform: scale(1.05, 1.05);
+          transform: scale(1.05, 1.05);
+}
+
+.main .card-deck .galeria4 {
+  border-radius: 20px;
+}
+
+.main .card-deck .galeria4 .card-body {
+  background-image: url(/image/galeria4.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  border-radius: 20px;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+  -webkit-box-shadow: 1px 4px 6px 5px #b3b3b3;
+          box-shadow: 1px 4px 6px 5px #b3b3b3;
+}
+
+.main .card-deck .galeria4 .card-body:hover {
+  -webkit-transform: scale(1.05, 1.05);
+          transform: scale(1.05, 1.05);
 }
 
 /* main comprar */
@@ -632,7 +762,7 @@ main .info-main .envio-pago .jumbotron p {
 .main .fondo_comprar {
   margin: 0px;
   background-image: url(../image/ladrillos.jpg);
-  height: 1100px;
+  height: 1250px;
 }
 
 .main .fondo_comprar .boton-contacto {
@@ -707,6 +837,39 @@ main .info-main .envio-pago .jumbotron p {
   text-align: center;
 }
 
+.main .fondo_comprar .pasos_comprar .boton-comprar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main .fondo_comprar .pasos_comprar .boton-comprar a {
+  color: white;
+  text-decoration: none;
+}
+
+.main .fondo_comprar .pasos_comprar .boton-comprar a h3 {
+  font-size: 1.5rem;
+  background-color: #ffbf49;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  font-style: italic;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.main .fondo_comprar .pasos_comprar .boton-comprar a h3:hover {
+  color: #ffbf49;
+  border: 3px #ffbf49 solid;
+  background-color: white;
+  text-decoration: none;
+}
+
 /* main nosotros */
 .main {
   -ms-grid-row: 2;
@@ -756,22 +919,86 @@ main .info-main .envio-pago .jumbotron p {
   color: white;
 }
 
-.main .nosotros {
-  background-color: black;
-  padding: 30px;
+.main .nosotros1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-.main .nosotros h2 {
+.main .nosotros1 .nosotros {
+  background-color: black;
+  /* padding: 80px; */
+  padding: 50px 40px 50px 40px;
+}
+
+.main .nosotros1 .nosotros h2 {
   font-size: 5rem;
   font-weight: 900;
   font-style: italic;
-  color: white;
+  color: #ffbf49;
 }
 
-.main .nosotros p {
-  font-size: 2rem;
+.main .nosotros1 .nosotros p {
+  font-size: 1.4rem;
   color: white;
-  width: 70%;
+  width: 90%;
+}
+
+.main .nosotros1 .card-deck2 {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 40px;
+  background-color: black;
+  width: 100%;
+  margin: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.main .nosotros1 .card-deck2 .gal-nos {
+  border-radius: 20px;
+  margin: 10px;
+  border: 0px;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+
+.main .nosotros1 .card-deck2 .gal-nos .card-body1 {
+  background-image: url(/image/gal-nos2.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 260px;
+  border-radius: 20px;
+}
+
+.main .nosotros1 .card-deck2 .gal-nos .card-body2 {
+  background-image: url(/image/gal-nos3.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 260px;
+  border-radius: 20px;
+}
+
+.main .nosotros1 .card-deck2 .gal-nos .card-body3 {
+  background-image: url(/image/fondo-contacto.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 260px;
+  border-radius: 20px;
+}
+
+.main .nosotros1 .card-deck2 .gal-nos:hover {
+  -webkit-transform: scale(1.05, 1.05);
+          transform: scale(1.05, 1.05);
 }
 
 /* main contacto */
@@ -925,7 +1152,7 @@ main .info-main .envio-pago .jumbotron p {
             justify-content: space-between;
   }
   .header nav ul li a {
-    font-size: 2.2rem;
+    font-size: 1.2rem;
   }
   .main .pasos_freir h2 {
     font-size: 3rem;
@@ -938,6 +1165,12 @@ main .info-main .envio-pago .jumbotron p {
   }
   .main .globo_texto .globo2 .mail_wp h3 {
     font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .header nav ul li a {
+    font-size: 2rem;
   }
 }
 
@@ -983,6 +1216,21 @@ main .info-main .envio-pago .jumbotron p {
   .main .globo_texto .globo2 .mail_wp {
     padding-top: 30px;
   }
+  .main .nosotros1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .nosotros1 .card-deck2 .gal-nos .card-body1 {
+    height: 400px;
+  }
+  .main .nosotros1 .card-deck2 .gal-nos .card-body2 {
+    height: 400px;
+  }
+  .main .nosotros1 .card-deck2 .gal-nos .card-body3 {
+    height: 400px;
+  }
 }
 
 @media only screen and (max-width: 1150px) {
@@ -1000,6 +1248,24 @@ main .info-main .envio-pago .jumbotron p {
   }
   main .botones-fijos .subir i {
     bottom: 150px;
+  }
+  .main .card-deck {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .card-deck .galeria1 {
+    margin: 10px;
+  }
+  .main .card-deck .galeria2 {
+    margin: 10px;
+  }
+  .main .card-deck .galeria3 {
+    margin: 10px;
+  }
+  .main .card-deck .galeria4 {
+    margin: 10px;
   }
 }
 
@@ -1048,6 +1314,12 @@ main .info-main .envio-pago .jumbotron p {
   .main .productos .producto {
     width: 90%;
   }
+  .main .titulos-prod h3 {
+    font-size: 3rem;
+  }
+  .main .coccion .cont-coccion .coccion-container .jumbotron p {
+    font-size: 1.2rem;
+  }
 }
 
 @media only screen and (max-width: 630px) {
@@ -1075,11 +1347,11 @@ main .info-main .envio-pago .jumbotron p {
   .main .carrusel_productos {
     padding: 20px 0px 20px 0px;
   }
-  .main .coccion .coccion-container .jumbotron h2 {
-    font-size: 3rem;
+  .main .coccion .cont-coccion .coccion-container .jumbotron h2 {
+    font-size: 2.5rem;
   }
-  .main .coccion .coccion-container .jumbotron p {
-    font-size: 1.4rem;
+  .main .coccion .cont-coccion .coccion-container .jumbotron p {
+    font-size: 0.8rem;
   }
   .main .como_comprar h2 {
     font-size: 3rem;
@@ -1096,9 +1368,21 @@ main .info-main .envio-pago .jumbotron p {
   .main .contactate h2 {
     font-size: 2rem;
   }
+  .main .card-deck .galeria1 .card-body {
+    height: 300px;
+  }
+  .main .card-deck .galeria2 .card-body {
+    height: 300px;
+  }
+  .main .card-deck .galeria3 .card-body {
+    height: 300px;
+  }
+  .main .card-deck .galeria4 .card-body {
+    height: 300px;
+  }
 }
 
-@media only screen and (max-width: 630px) and (max-width: 650px) {
+@media only screen and (max-width: 650px) {
   .globo_texto .labeltexto {
     padding-left: 0px;
   }
@@ -1122,6 +1406,12 @@ main .info-main .envio-pago .jumbotron p {
   }
   .main .globo_texto {
     margin-left: 0px;
+  }
+  .main .coccion .cont-coccion .coccion-container .jumbotron h2 {
+    font-size: 3rem;
+  }
+  .main .coccion .cont-coccion .coccion-container .jumbotron p {
+    font-size: 1rem;
   }
 }
 
@@ -1166,10 +1456,10 @@ main .info-main .envio-pago .jumbotron p {
   .main .fondo_comprar .pasos_comprar {
     padding: 50px 50px 50px 50px;
   }
-  .main .nosotros h2 {
+  .main .nosotros1 .nosotros h2 {
     font-size: 3rem;
   }
-  .main .nosotros p {
+  .main .nosotros1 .nosotros p {
     font-size: 1rem;
   }
   .main .globo_texto .globo2 h2 {
@@ -1178,6 +1468,9 @@ main .info-main .envio-pago .jumbotron p {
   }
   .main .globo_texto .globo2 .areatexto {
     width: 250px;
+  }
+  .main .titulos-prod h3 {
+    font-size: 2rem;
   }
 }
 
@@ -1223,6 +1516,18 @@ main .info-main .envio-pago .jumbotron p {
   }
   .main .globo_texto .globo2 .mail_wp h3 {
     font-size: 1rem;
+  }
+  .main .titulos-prod h3 {
+    font-size: 1.6rem;
+  }
+  .main .nosotros1 .nosotros h2 {
+    font-size: 2rem;
+  }
+  .main .coccion .cont-coccion .coccion-container .jumbotron h2 {
+    font-size: 2rem;
+  }
+  .main .coccion .cont-coccion .coccion-container .jumbotron p {
+    font-size: 0.9rem;
   }
 }
 
@@ -1314,5 +1619,11 @@ footer .redes .fa-brands:hover {
           transform: rotate(360deg);
   -webkit-transition: 2s;
   transition: 2s;
+}
+
+footer .copy h3 {
+  font-size: 15px;
+  font-style: italic;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

@@ -2,6 +2,7 @@
 main{
     grid-area: main;
     .hero{
+        
         .foto{
             background-image: url(../image/chedars.jpg);
             background-size: cover;
@@ -179,6 +180,29 @@ main{
 /* main productos */
 .main{
     grid-area: main;
+    .hero{
+        .foto_productos{
+            background-image: url(../image/bast223.jpg);
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+        }
+    }
+    .titulos-prod{
+        background-color: $color1;
+        h3{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 5rem;
+            font-weight: 900;
+            font-style: italic;
+            color:white;
+            padding: 20px;
+            margin: 0px;
+            text-align: center;
+        }
+    }
     .carrusel_productos{
         display: flex;
         justify-content: center;
@@ -186,6 +210,8 @@ main{
         padding: 30px;
         .slide{
             width: 80%;
+            box-shadow: 1px 4px 6px 5px rgb(179, 179, 179);
+            border-radius: 30px;
             img{
                 width: 100%;
                 height: 710px;
@@ -199,14 +225,7 @@ main{
             }
         }
     }
-    .hero{
-        .foto_productos{
-            background-image: url(../image/bast223.jpg);
-            background-size: cover;
-            background-position: center;
-            height: 100vh;
-        }
-    } 
+    
     .productos{
         background-color: black;
         display: flex;
@@ -221,10 +240,10 @@ main{
                 background-image: url(../image/cheddar.jpg);
                 background-size: cover;
                 background-position: center;
-                transform: all 0.5s;
                 border-radius: 30px;
+                transition: all 0.6s;
                 &:hover{
-                    transform: scale(1.01,1.01);
+                    transform: scale(1.05,1.05);
                 }
             }
             .jumbotron2{
@@ -232,10 +251,10 @@ main{
                 background-image: url(../image/baston-prod.jpg);
                 background-size: cover;
                 background-position: center;
-                transform: all 0.5s;
                 border-radius: 30px;
+                transition: all 0.6s;
                 &:hover{
-                    transform: scale(1.01,1.01);
+                    transform: scale(1.05,1.05);
                 }
             }
             .jumbotron3{
@@ -243,10 +262,10 @@ main{
                 background-image: url(../image/bolitas-prod.jpg);
                 background-size: cover;
                 background-position: center;
-                transform: all 0.5s;
                 border-radius: 30px;
+                transition: all 0.6s;
                 &:hover{
-                    transform: scale(1.01,1.01);
+                    transform: scale(1.05,1.05);
                 }
             }
             .jumbotron4{
@@ -255,9 +274,9 @@ main{
                 background-size: cover;
                 background-position: center;
                 border-radius: 30px;
-                transform: all 0.5s;
+                transition: all 0.6s;
                 &:hover{
-                    transform: scale(1.01,1.01);
+                    transform: scale(1.05,1.05);
                 }
             }
             .texto{
@@ -285,8 +304,7 @@ main{
                     text-align: center;
                 }
             }
-        }
-        
+        }   
     }
 }
 /* main coccion */
@@ -326,45 +344,122 @@ main{
     .coccion{
         background-image: url(../image/ladrillos.jpg);
         width: 100%;
-        .coccion-container{
-            width:100%;
-            padding: 20px;
-            display: flex;
-            justify-content: center;
-                .jumbotron{
-                height: 300px;
-                background-color: black;
-                width: 70%;    
-                margin: 0px ;
-                border-radius: 30px;
-                justify-content: center;
-                display: flex;
-                align-items: center;
-                flex-direction: column;
-                box-shadow: 1px 4px 6px 7px rgb(150, 150, 150);
-                &:hover{
-                    transform: scale(1.01,1.01);
-                }
-                h2{
-                color: $color1 ;
+        display: flex;
+        flex-direction: column;
+        .video{
+            background-image: url(/image/video.gif);
+            height: 500px;
+            background-repeat: no-repeat;
+        }
+        .cont-coccion{
+            .coccion-container{
+                width:100%;
+                padding: 20px;
                 display: flex;
                 justify-content: center;
-                font-weight: 900;
-                font-style: italic;
-                font-size: 4rem;
-                text-shadow: 1px 1px 2px rgb(122, 122, 122);
-                }
-                p{
-                color: white;
-                font-size: 1.5rem;
-                display: flex;
-                justify-content: center;
-                text-align: center;
-                font-weight: bold;
+                    .jumbotron{
+                    height: 300px;
+                    background-color: black;
+                    width: 70%;    
+                    margin: 0px ;
+                    border-radius: 30px;
+                    justify-content: center;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    box-shadow: 1px 4px 6px 7px rgb(150, 150, 150);
+                    &:hover{
+                        transform: scale(1.01,1.01);
+                    }
+                    h2{
+                    color: $color1 ;
+                    display: flex;
+                    justify-content: center;
+                    font-weight: 900;
+                    font-style: italic;
+                    font-size: 4rem;
+                    text-shadow: 1px 1px 2px rgb(122, 122, 122);
+                    }
+                    p{
+                    color: white;
+                    font-size: 1.5rem;
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+                    font-weight: bold;
+                    }
                 }
             }
-        }   
-    }       
+        }
+           
+    }
+    .card-deck{
+        padding: 40px;
+        background-color: white;
+        width: 100%;
+        margin: 0px;
+        .galeria1{
+            border-radius: 20px;
+            .card-body{
+                background-image: url(/image/galeria1.jpg);
+                background-position: center;
+                background-size: cover;
+                height: 400px;
+                border-radius: 20px;
+                transition: all 0.6s;
+                box-shadow: 1px 4px 6px 5px rgb(179, 179, 179);
+                &:hover{
+                    transform: scale(1.05,1.05);
+                }
+            }
+        }
+        .galeria2{
+            border-radius: 20px;
+            .card-body{
+                background-image: url(/image/galeria2.jpg);
+                background-position: center;
+                background-size: cover;
+                height: 400px;
+                border-radius: 20px;
+                transition: all 0.6s;
+                box-shadow: 1px 4px 6px 5px rgb(179, 179, 179);
+                &:hover{
+                    transform: scale(1.05,1.05);
+                }
+            }
+        }
+        .galeria3{
+            border-radius: 20px;
+            .card-body{
+                background-image: url(/image/galeria3.jpg);
+                background-position: center;
+                background-size: cover;
+                height: 400px;
+                border-radius: 20px;
+                transition: all 0.6s;
+                box-shadow: 1px 4px 6px 5px rgb(179, 179, 179);
+                &:hover{
+                    transform: scale(1.05,1.05);
+                }
+            }
+        }
+        .galeria4{
+            border-radius: 20px;
+            .card-body{
+                background-image: url(/image/galeria4.jpg);
+                background-position: center;
+                background-size: cover;
+                height: 400px;
+                border-radius: 20px;
+                transition: all 0.6s;
+                box-shadow: 1px 4px 6px 5px rgb(179, 179, 179);
+                &:hover{
+                    transform: scale(1.05,1.05);
+                }
+            }
+        }
+    }
+           
 }
 /* main comprar */
 .main{
@@ -394,7 +489,7 @@ main{
     .fondo_comprar{
         margin: 0px;
         background-image: url(../image/ladrillos.jpg);
-        height: 1100px;
+        height: 1250px;
         .boton-contacto{
             display: flex;
             justify-content: center;
@@ -444,6 +539,32 @@ main{
                     text-align: center;
                 }
             }
+            .boton-comprar{
+                display: flex;
+                justify-content: center;
+                    a{
+                        color: white;
+                        text-decoration: none;
+                        h3{
+                            font-size: 1.5rem;
+                            background-color: $color1;
+                            padding: 10px;
+                            border-radius: 10px;
+                            color: white;
+                            font-style: italic;
+                            cursor: pointer;
+                            font-weight: bold;
+                            text-decoration: none;
+                            &:hover{
+                                color: $color1;
+                                border: 3px $color1 solid;
+                                background-color: white;
+                                text-decoration: none;
+                        }
+                    }
+            
+                }
+            }
         }
     }
 }
@@ -483,22 +604,69 @@ main{
             color:rgb(255, 255, 255) ;
         }
     }
-    .nosotros{
-        background-color: black;
-        padding: 30px;
-        h2{
-            font-size: 5rem;
-            font-weight: 900;
-            font-style: italic;
-            color: white;
+    .nosotros1{
+        display: flex;
+        flex-direction: row;
+        
+        .nosotros{
+            background-color: black;
+            /* padding: 80px; */
+            padding: 50px 40px 50px 40px;
+            h2{
+                
+                font-size: 5rem;
+                font-weight: 900;
+                font-style: italic;
+                color: $color1;
+            }
+            p{
+                font-size: 1.4rem;
+                color: white;
+                width: 90%;
+                
+            }
         }
-        p{
-            font-size: 2rem;
-            color: white;
-            width: 70%;
+        .card-deck2{
+            flex-direction: column;
+            padding: 40px;
+            background-color: black;
+            width: 100%;
+            margin: 0px;
+            display: flex;
+            justify-content: space-around;
+
+            .gal-nos{
+                border-radius: 20px;
+                margin: 10px;
+                border: 0px;
+                transition: all 0.6s;
+            .card-body1{
+                background-image: url(/image/gal-nos2.jpg);
+                background-position: center;
+                background-size: cover;
+                height: 260px;
+                border-radius: 20px;
+            }
+            .card-body2{
+                background-image: url(/image/gal-nos3.jpg);
+                background-position: center;
+                background-size: cover;
+                height: 260px;
+                border-radius: 20px;
+            } 
+            .card-body3{
+                background-image: url(/image/fondo-contacto.jpg);
+                background-position: center;
+                background-size: cover;
+                height: 260px;
+                border-radius: 20px;
+            }
+            &:hover{
+                transform: scale(1.05,1.05);
+            }
+            }
         }
     }
-    
 }
 /* main contacto */
 .main{
@@ -614,7 +782,7 @@ main{
         justify-content: space-between;
     }
     .header nav ul li a{
-        font-size: 2.2rem;
+        font-size: 1.2rem;
     }
     .main .pasos_freir h2{
         font-size: 3rem;
@@ -627,6 +795,11 @@ main{
     }
     .main .globo_texto .globo2 .mail_wp h3{
         font-size: 1.2rem;
+    }
+}
+@media only screen and (max-width: 767px){
+    .header nav ul li a{
+        font-size: 2rem;
     }
 }
 /* carrusel home */
@@ -660,6 +833,18 @@ main{
     .main .globo_texto .globo2 .mail_wp{
         padding-top: 30px;
     }
+    .main .nosotros1{
+        flex-direction: column;
+    }
+    .main .nosotros1 .card-deck2 .gal-nos .card-body1{
+        height: 400px;
+    }
+    .main .nosotros1 .card-deck2 .gal-nos .card-body2{
+        height: 400px;
+    }
+    .main .nosotros1 .card-deck2 .gal-nos .card-body3{
+        height: 400px;
+    }
 }
 
 @media only screen and (max-width: 1150px){
@@ -677,6 +862,21 @@ main{
     }
     main .botones-fijos .subir i{
         bottom: 150px;
+    }
+    .main .card-deck{
+        flex-direction: column;
+    }
+    .main .card-deck .galeria1{
+        margin: 10px;
+    }
+    .main .card-deck .galeria2{
+        margin: 10px;
+    }
+    .main .card-deck .galeria3{
+        margin: 10px;
+    }
+    .main .card-deck .galeria4{
+        margin: 10px;
     }
 }
 @media only screen and (max-width: 900px){
@@ -719,6 +919,12 @@ main{
     .main .productos .producto{
         width: 90%;
     }
+    .main .titulos-prod h3{
+        font-size: 3rem;
+    }
+    .main .coccion .cont-coccion .coccion-container .jumbotron p {
+        font-size: 1.2rem;
+    }
 }
 @media only screen and (max-width: 630px){
     main .carrusel_home .slide img{
@@ -745,11 +951,11 @@ main{
     .main .carrusel_productos{
         padding: 20px 0px 20px 0px;
     }
-    .main .coccion .coccion-container .jumbotron h2{
-        font-size: 3rem;
+    .main .coccion .cont-coccion .coccion-container .jumbotron h2{
+        font-size: 2.5rem;
     }
-    .main .coccion .coccion-container .jumbotron p{
-        font-size: 1.4rem;
+    .main .coccion .cont-coccion .coccion-container .jumbotron p {
+        font-size: 0.8rem;
     }
     .main .como_comprar h2{
         font-size: 3rem;
@@ -766,34 +972,52 @@ main{
     .main .contactate h2{
         font-size: 2rem;
     }
-    
-    @media only screen and (max-width: 650px){
-        .globo_texto .labeltexto{
-            padding-left: 0px ;
-        }
-        .main .globo_texto .nombre_apellido{
-            padding: 10px 0px 30px 0px ;
-        }
-        .main .globo_texto .nombre_apellido h2{
-            margin-left: 20px;
-            font-size: 2rem;
-        }
-        .main .globo_texto h2{
-            margin-left: 20px;
-            font-size: 1.6rem;
-        }
-         .main .globo_texto label{
-            margin-left: 50px;
-        } 
-        .nombre_apellido input{
-            padding: 20px 30px 20px 20px !important;
-            margin: 0px ;
-        }
-        .main .globo_texto{
-            margin-left: 0px ;
-        }
+    .main .card-deck .galeria1 .card-body{
+        height: 300px;
+    }
+    .main .card-deck .galeria2 .card-body{
+        height: 300px;
+    }
+    .main .card-deck .galeria3 .card-body{
+        height: 300px;
+    }
+    .main .card-deck .galeria4 .card-body{
+        height: 300px;
     }
 }
+@media only screen and (max-width: 650px){
+    .globo_texto .labeltexto{
+        padding-left: 0px ;
+    }
+    .main .globo_texto .nombre_apellido{
+        padding: 10px 0px 30px 0px ;
+    }
+    .main .globo_texto .nombre_apellido h2{
+        margin-left: 20px;
+        font-size: 2rem;
+    }
+    .main .globo_texto h2{
+        margin-left: 20px;
+        font-size: 1.6rem;
+    }
+     .main .globo_texto label{
+        margin-left: 50px;
+    } 
+    .nombre_apellido input{
+        padding: 20px 30px 20px 20px !important;
+        margin: 0px ;
+    }
+    .main .globo_texto{
+        margin-left: 0px ;
+    }
+    .main .coccion .cont-coccion .coccion-container .jumbotron h2{
+        font-size: 3rem;
+    }
+    .main .coccion .cont-coccion .coccion-container .jumbotron p {
+        font-size: 1rem;
+    }
+}
+
 @media only screen and (max-width: 530px){
     main .hero .texto_hero h1 {
         font-size: 3rem;
@@ -828,10 +1052,10 @@ main{
     .main .fondo_comprar .pasos_comprar{
         padding: 50px 50px 50px 50px;
     }
-    .main .nosotros h2{
+    .main .nosotros1 .nosotros h2{
         font-size: 3rem;
     }
-    .main .nosotros p{
+    .main .nosotros1 .nosotros p{
         font-size: 1rem;
     }
     .main .globo_texto .globo2 h2{
@@ -840,6 +1064,9 @@ main{
     }
     .main .globo_texto .globo2 .areatexto{
         width: 250px;
+    }
+    .main .titulos-prod h3{
+        font-size: 2rem;
     }
 }
 @media only screen and (max-width: 420px){
@@ -884,5 +1111,17 @@ main{
     }
     .main .globo_texto .globo2 .mail_wp h3{
         font-size: 1rem;
+    }
+    .main .titulos-prod h3{
+        font-size: 1.6rem;
+    }
+    .main .nosotros1 .nosotros h2{
+        font-size: 2rem;
+    }
+    .main .coccion .cont-coccion .coccion-container .jumbotron h2{
+        font-size: 2rem;
+    }
+    .main .coccion .cont-coccion .coccion-container .jumbotron p {
+        font-size: 0.9rem;
     }
 }
