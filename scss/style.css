@@ -561,12 +561,6 @@ main .info-main .envio-pago .jumbotron p {
           flex-direction: column;
 }
 
-.main .coccion .video {
-  background-image: url(/image/video.gif);
-  height: 500px;
-  background-repeat: no-repeat;
-}
-
 .main .coccion .cont-coccion .coccion-container {
   width: 100%;
   padding: 20px;
@@ -645,7 +639,7 @@ main .info-main .envio-pago .jumbotron p {
 }
 
 .main .card-deck .galeria1 .card-body {
-  background-image: url(/image/galeria1.jpg);
+  background-image: url(../image/galeria1.jpg);
   background-position: center;
   background-size: cover;
   height: 400px;
@@ -666,7 +660,7 @@ main .info-main .envio-pago .jumbotron p {
 }
 
 .main .card-deck .galeria2 .card-body {
-  background-image: url(/image/galeria2.jpg);
+  background-image: url(../image/galeria2.jpg);
   background-position: center;
   background-size: cover;
   height: 400px;
@@ -687,7 +681,7 @@ main .info-main .envio-pago .jumbotron p {
 }
 
 .main .card-deck .galeria3 .card-body {
-  background-image: url(/image/galeria3.jpg);
+  background-image: url(../image/galeria3.jpg);
   background-position: center;
   background-size: cover;
   height: 400px;
@@ -708,7 +702,7 @@ main .info-main .envio-pago .jumbotron p {
 }
 
 .main .card-deck .galeria4 .card-body {
-  background-image: url(/image/galeria4.jpg);
+  background-image: url(../image/galeria4.jpg);
   background-position: center;
   background-size: cover;
   height: 400px;
@@ -973,7 +967,7 @@ main .info-main .envio-pago .jumbotron p {
 }
 
 .main .nosotros1 .card-deck2 .gal-nos .card-body1 {
-  background-image: url(/image/gal-nos2.jpg);
+  background-image: url(../image/gal-nos2.jpg);
   background-position: center;
   background-size: cover;
   height: 260px;
@@ -981,7 +975,7 @@ main .info-main .envio-pago .jumbotron p {
 }
 
 .main .nosotros1 .card-deck2 .gal-nos .card-body2 {
-  background-image: url(/image/gal-nos3.jpg);
+  background-image: url(../image/gal-nos3.jpg);
   background-position: center;
   background-size: cover;
   height: 260px;
@@ -989,7 +983,7 @@ main .info-main .envio-pago .jumbotron p {
 }
 
 .main .nosotros1 .card-deck2 .gal-nos .card-body3 {
-  background-image: url(/image/fondo-contacto.jpg);
+  background-image: url(../image/fondo-contacto.jpg);
   background-position: center;
   background-size: cover;
   height: 260px;

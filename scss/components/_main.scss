@@ -346,11 +346,6 @@ main{
         width: 100%;
         display: flex;
         flex-direction: column;
-        .video{
-            background-image: url(/image/video.gif);
-            height: 500px;
-            background-repeat: no-repeat;
-        }
         .cont-coccion{
             .coccion-container{
                 width:100%;
@@ -401,7 +396,7 @@ main{
         .galeria1{
             border-radius: 20px;
             .card-body{
-                background-image: url(/image/galeria1.jpg);
+                background-image: url(../image/galeria1.jpg);
                 background-position: center;
                 background-size: cover;
                 height: 400px;
@@ -416,7 +411,7 @@ main{
         .galeria2{
             border-radius: 20px;
             .card-body{
-                background-image: url(/image/galeria2.jpg);
+                background-image: url(../image/galeria2.jpg);
                 background-position: center;
                 background-size: cover;
                 height: 400px;
@@ -431,7 +426,7 @@ main{
         .galeria3{
             border-radius: 20px;
             .card-body{
-                background-image: url(/image/galeria3.jpg);
+                background-image: url(../image/galeria3.jpg);
                 background-position: center;
                 background-size: cover;
                 height: 400px;
@@ -446,7 +441,7 @@ main{
         .galeria4{
             border-radius: 20px;
             .card-body{
-                background-image: url(/image/galeria4.jpg);
+                background-image: url(../image/galeria4.jpg);
                 background-position: center;
                 background-size: cover;
                 height: 400px;
@@ -641,21 +636,21 @@ main{
                 border: 0px;
                 transition: all 0.6s;
             .card-body1{
-                background-image: url(/image/gal-nos2.jpg);
+                background-image: url(../image/gal-nos2.jpg);
                 background-position: center;
                 background-size: cover;
                 height: 260px;
                 border-radius: 20px;
             }
             .card-body2{
-                background-image: url(/image/gal-nos3.jpg);
+                background-image: url(../image/gal-nos3.jpg);
                 background-position: center;
                 background-size: cover;
                 height: 260px;
                 border-radius: 20px;
             } 
             .card-body3{
-                background-image: url(/image/fondo-contacto.jpg);
+                background-image: url(../image/fondo-contacto.jpg);
                 background-position: center;
                 background-size: cover;
                 height: 260px;
